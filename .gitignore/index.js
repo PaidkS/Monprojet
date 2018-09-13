@@ -5,7 +5,7 @@ var prefix = ("s!")
 
 bot.on('ready', function() {
     bot.user.setGame("Command: s!help");
-    console.log("Connectedç");
+    console.log("Connected");
 });
 
 bot.login(process.env.TOKEN);
