@@ -16,8 +16,8 @@ bot.on('message',message => {
         message.channel.sendMessage("Liste des commandes du SolusBot: \n -s!help");
     }
 
-    if (message.content === "Salut"){
-        message.reply("Bonjour");
+    if (message.content === prfix + "beta"){
+        message.reply("La bêta est en dévelopement.");
         console.log("commande Salut effectué");
     }
 });
