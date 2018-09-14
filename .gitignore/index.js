@@ -17,7 +17,7 @@ bot.on('message',message => {
     }
 
     if (message.content === prfix + "beta"){
-        message.reply("La bêta est en dévelopement.");
+        message.reply("La beta est en dévelopement");
         console.log("commande Salut effectué");
     }
 });
