@@ -13,7 +13,7 @@ bot.login(process.env.TOKEN);
 
 bot.on('message',message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("Liste des commandes du SolusBot: \n -s!help");
+        message.reply("Liste des commandes du SolusBot: \n -s!help");
     }
 
     if (message.content === prefix + "beta"){
