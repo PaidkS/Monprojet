@@ -1,4 +1,5 @@
- "name": "solusbot",
+{
+  "name": "solusbot",
   "version": "1.0.0",
   "description": "Bot pour SolusGame",
   "main": "index.js",
