@@ -12,8 +12,8 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message',message => {
-    if (message.content === prefix + "help"){
-        message.reply("Liste des commandes du SolusBot: \n -s!help \n -s!beta \n -s!paidks \n -s!solus");
+    if (message.content === prefix + "solus"){
+        message.reply("Solus est un MMO FPS français en dévelopemet");
     }
 
     if (message.content === prefix + "beta"){
@@ -27,3 +27,20 @@ bot.on('message',message => {
         message.reply("It's my dady");
     }
 });
+
+    if (message.content === prefix + "help"){
+        var embed = new DiscordEmbed()
+            .setTitle("Help")
+            .setDescription("Les commandes du bot son :")
+            .addField("s!help","Page d'aide",true)
+            .addField("s!beta","Informations sur le l'avancement de la beta",true)
+            .addField("s!meme","Même aléatoire",true)
+            .addField("s!level","Affiche votre niveau",true)
+            .addField("s!paidks","Le meilleur"true)
+            .addField("s!solus","Informations sur le jeux"true)
+            .setColor("0xFF0000")
+            .setFooter("Enjoy")
+        message.channel.sendEmbed(embed);
+    }
+});
+  
