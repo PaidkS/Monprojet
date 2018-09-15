@@ -27,7 +27,5 @@ bot.on('message',message => {
         message.reply("It's my dady");
     }
     
-    if (message.content === prefix + "help"){
-        message.reply("Liste des commandes:" \n \n "s!help" \n "s!beta" \n "s!paidks" \n "s!solus" \n "s!level" \n "s!meme");
-    }
+    
 });
