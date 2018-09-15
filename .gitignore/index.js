@@ -27,5 +27,3 @@ bot.on('message',message => {
         message.reply("It's my dady");
     }
 });
-
-  
