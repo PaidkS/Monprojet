@@ -27,8 +27,6 @@ bot.on('message',message => {
         message.reply("It's my dady");
     }
     
-}); 
-bot.on('message',message => {
     if (message.content === prefix + "help"){ 
             var embed = new DiscordEmbed() 
                 .setTitle("Help") 
