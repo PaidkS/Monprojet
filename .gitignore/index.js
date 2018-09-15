@@ -28,7 +28,7 @@ bot.on('message',message => {
     }
     
 }); 
-
+bot.on('message',message => {
     if (message.content === prefix + "help"){ 
             var embed = new DiscordEmbed() 
                 .setTitle("Help") 
@@ -45,5 +45,3 @@ bot.on('message',message => {
     }
 
 }); 
-
-
