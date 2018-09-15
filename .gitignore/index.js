@@ -31,7 +31,7 @@ bot.on('message',message => {
     if (message.content === prefix + "help"){
         var embed = new DiscordEmbed()
             .setTitle("Help")
-            .setDescription("Les commandes du bot son :")
+            .setDescription("Les commandes du bot son")
             .addField("s!help","Page d'aide",true)
             .addField("s!beta","Informations sur le l'avancement de la beta",true)
             .addField("s!meme","Même aléatoire",true)
