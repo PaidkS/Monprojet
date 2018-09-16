@@ -8,6 +8,9 @@ bot.on('ready', function() {
     console.log("Connectedç");
 });
 
+bot.login(process.env.TOKEN);
+
+
 bot.on('message',message => {
     if (message.content === prefix + "solus"){
         message.reply("Solus est un MMO FPS français en dévelopemet");
@@ -37,9 +40,6 @@ bot.on('message',message => {
                 .setColor("0xFF0000") 
                 .setFooter("Enjoy") 
             message.channel.sendEmbed(embed); 
-            message.reply(embed);
     }
 
 }); 
-
-bot.login(process.env.TOKEN);
