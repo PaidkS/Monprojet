@@ -32,6 +32,6 @@ bot.on('message',message => {
             .addField("s!help","Page d'aide", true) 
             .setColor("0xFF0000") 
             .setFooter("Enjoy") 
-        message.channel.sendembed(embed); 
+        un  message de . canal .  ( d' intégration );
     }
 }); 
