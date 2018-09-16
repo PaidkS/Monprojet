@@ -26,7 +26,7 @@ bot.on('message',message => {
     }
     
     if (message.content === prefix + "help"){ 
-        var embed = new DiscordEmbed() 
+        var embed = new Discord.RichEmbed() 
             .setTitle("Help") 
             .setDescription("Les commandes du bot son") 
             .addField("s!help","Page d'aide", true) 
