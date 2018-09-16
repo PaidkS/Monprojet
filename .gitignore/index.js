@@ -1,4 +1,3 @@
-// Code de Maxime
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
@@ -8,9 +7,6 @@ bot.on('ready', function() {
     bot.user.setGame("s!help for help");
     console.log("Connectedç");
 });
-
-bot.login(process.env.TOKEN);
-
 
 bot.on('message',message => {
     if (message.content === prefix + "solus"){
@@ -41,6 +37,9 @@ bot.on('message',message => {
                 .setColor("0xFF0000") 
                 .setFooter("Enjoy") 
             message.channel.sendEmbed(embed); 
+            message.reply(embed);
     }
 
 }); 
+
+bot.login(process.env.TOKEN);
