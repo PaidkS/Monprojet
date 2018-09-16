@@ -39,6 +39,6 @@ bot.on('message',message => {
                 .addField("s!solus","Informations sur le jeux",true) 
                 .setColor("0xFF0000") 
                 .setFooter("Enjoy") 
-            message.channel.sendEmbed(embed); 
+            message.reply(embed); 
     }
 }); 
