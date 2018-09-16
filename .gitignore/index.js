@@ -30,11 +30,6 @@ bot.on('message',message => {
             .setTitle("Help") 
             .setDescription("Les commandes du bot son") 
             .addField("s!help","Page d'aide", true) 
-            //.addField("s!beta","Informations sur le l'avancement de la beta", true) 
-            //.addField("s!meme","Même aléatoire", true) 
-            //.addField("s!level","Affiche votre niveau", true) 
-            //.addField("s!paidks","Le meilleur", true) 
-            //.addField("s!solus","Informations sur le jeux", true) 
             .setColor("0xFF0000") 
             .setFooter("Enjoy") 
         message.channel.sendembed(embed); 
