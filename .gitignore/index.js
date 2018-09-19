@@ -53,7 +53,7 @@ bot.on('message',message => {
         console.log(userxp);
         console.log(`Nombre d'xp : ${usercp[1]}`)
     
-        db.get("xp).find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] += 1}).write();
+        db.get("xp").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] += 1}).write();
            
     }
                
