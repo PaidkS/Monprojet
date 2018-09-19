@@ -39,4 +39,18 @@ bot.on('message',message => {
             .setFooter("Enjoy") 
         message.channel.sendEmbed(embed);
     }
+    
+    var msgauthor = message.author.id;
+    
+    if(message.author.bot)return;
+    
+    if(!db.get("xp").find({user: msgauthor}).value()){
+        db.get("xp").push({user: msgauthor, xp: 1}).write();
+    ]else(
+        var userdb = db.get("xp").filter({user: msgauthor}).find('xp').value();
+        console.log(userxpdb);
+        var userxp = Object.values(userxpdb)
+        console.log(userxp);
+        console.log(`Nombre d'xp : ${usercp[1]}`)
+    
 }); 
