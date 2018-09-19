@@ -46,7 +46,8 @@ bot.on('message',message => {
     
     if(!db.get("xp").find({user: msgauthor}).value()){
         db.get("xp").push({user: msgauthor, xp: 1}).write();
-    ]else(
+    ]
+    else{
         var userdb = db.get("xp").filter({user: msgauthor}).find('xp').value();
         console.log(userxpdb);
         var userxp = Object.values(userxpdb)
