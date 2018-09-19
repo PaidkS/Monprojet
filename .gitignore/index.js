@@ -59,7 +59,7 @@ bot.on('message',message => {
                
     if (message.content === prefix + "level"){
         var xp = db.get("xp").filter({user: msgauthor}).find('xp').value()
-        var xpfinal = Object.value(xp);
+        var xpfinal = Object.value("xp");
         var xp_embed = Discord.RichEmbed()
             .setTitle("Xp de ${message.author.username}")
             .setDescription("Voici Ton XP !")
