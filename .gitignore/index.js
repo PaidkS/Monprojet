@@ -66,7 +66,6 @@ bot.on('message',message => {
             .addField("XP :", '${xpfinal[1]} xp')
         message.channel.send{(embed: xp_embed});
     }
-            
-            
+                     
 }); 
            
