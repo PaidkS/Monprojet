@@ -53,4 +53,20 @@ bot.on('message',message => {
         console.log(userxp);
         console.log(`Nombre d'xp : ${usercp[1]}`)
     
+        db.get("xp).find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] += 1}).write();
+           
+    }
+               
+    if (message.content === prefix + "level"){
+        var xp = db.get("xp").filter({user: msgauthor}).find('xp').value()
+        var xpfinal = Object.value(xp);
+        var xp_embed = Discord.RichEmbed()
+            .setTitle('Xp de ${message.author.username}')
+            .setDescription("Voici Ton XP !")
+            .addField("XP :", '${xpfinal[1]} xp')
+        message.channel.send{(embed: xp_embed});
+    }
+            
+            
 }); 
+           
