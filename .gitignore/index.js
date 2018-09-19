@@ -46,7 +46,9 @@ bot.on('message',message => {
     
     if(!db.get("xp").find({user: msgauthor}).value()){
         db.get("xp").push({user: msgauthor, xp: 1}).write();
-    ]else(
+    }
+    else
+    {
         var userdb = db.get("xp").filter({user: msgauthor}).find('xp').value();
         console.log(userxpdb);
         var userxp = Object.values(userxpdb)
@@ -54,7 +56,7 @@ bot.on('message',message => {
         console.log(`Nombre d'xp : ${usercp[1]}`)
     
         db.get("xp").find({user: msgauthor}).assign({user: msgauthor, xp: userxp[1] += 1}).write();
-           
+      
     }
                
     if (message.content === prefix + "level"){
