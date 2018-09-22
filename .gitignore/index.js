@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-//Pour les xp
 const low = require('lowdb');
 const FileSync = require ('lowdb/adapters/fileSync')
 const client = new Discord.Client();
