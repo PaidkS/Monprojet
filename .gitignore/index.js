@@ -4,10 +4,10 @@ const low = require('lowdb');
 const FileSync = require ('lowdb/adapters/fileSync')
 const client = new Discord.Client();
 
-#const adapter = new FileSync('database.json');
-#const db = low(adapter);
+//const adapter = new FileSync('database.json');
+//const db = low(adapter);
 
-#db.defaults({histoires: [], xp: []}).write() 
+//db.defaults({histoires: [], xp: []}).write() 
 var prefix = ("s!")
 
 bot.on('ready', function() {
