@@ -35,7 +35,7 @@ bot.on('message',message => {
         console.log("commande Salut effectué");
     }
 
-    if (message.content === "caresse folki"){
+    if (message.content === "<strong>caresse folki</strong>"){
         message.reply("**ronronne**");
     }
 
