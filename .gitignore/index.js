@@ -23,7 +23,7 @@ bot.on('message',message => {
         message.reply("Solus est un MMO FPS français en dévelopemet");
     }
    
-    if (message.content === + "meurt"){
+    if (message.content === "meurt"){
         message.reply("**s'allonge sur lui tristement**");
     }
     if (message.content === "miaou"){
