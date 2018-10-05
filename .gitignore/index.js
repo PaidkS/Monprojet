@@ -30,6 +30,10 @@ bot.on('message',message => {
         message.reply("miaou");
     }
     
+    if (message.content === "jiji"){
+        message.reply("Nique ta mere");
+    }
+    
     if (message.content === "folki viens ici"){
         message.reply("**arrive joyeusement**");
         console.log("commande Salut effectué");
