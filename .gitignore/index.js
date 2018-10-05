@@ -43,12 +43,20 @@ bot.on('message',message => {
         message.reply("**s'assoit**");
     }
     
+    if (message.content === ""){
+        message.reply("miaou miaou **arrive**");
+    }
+    
     if (message.content === "croquette"){
         message.reply("nani ?");
     }
     
     if (message.content === "FOLKI"){
         message.reply("miaou miaou **arrive**");
+    }
+    
+    if (message.content === "pere noel"){
+        message.reply("http://www.icone-gif.com/gif/humour/pipi-caca/pipi_caca012.gif");
     }
     
     if (message.content === "caca"){
