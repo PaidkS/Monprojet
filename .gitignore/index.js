@@ -40,7 +40,7 @@ bot.on('message',message => {
     }
 
     if (message.content === prefix + "beta"){
-        message.reply("La beta est en dévelopement");
+        message.reply("http://www.solus-enterprise.co.nf/");
         console.log("commande Salut effectué");
     }
 
