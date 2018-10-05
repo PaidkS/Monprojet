@@ -51,6 +51,10 @@ bot.on('message',message => {
         message.reply("miaou miaou **arrive**");
     }
     
+    if (message.content === "caca"){
+        message.reply("http://www.icone-gif.com/gif/humour/pipi-caca/pipi_caca005.gif");
+    }
+    
     if (message.content === "bien"){
         message.reply("ok et tu m'aime ?");
     }
