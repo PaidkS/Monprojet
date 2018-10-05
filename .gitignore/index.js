@@ -39,6 +39,10 @@ bot.on('message',message => {
         message.reply("**s'assoit**");
     }
     
+    if (message.content === "croquette"){
+        message.reply("nani ?");
+    }
+    
     if (message.content === "caresse folki"){
         message.reply("**ronronne**");
     }
