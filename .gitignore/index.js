@@ -11,7 +11,7 @@ const client = new Discord.Client();
 var prefix = ("s!")
 
 bot.on('ready', function() {
-    bot.user.setGame("s!help for help");
+    bot.user.setGame("vec FoliiiFolki");
     console.log("Connectedç");
 });
 
@@ -21,6 +21,22 @@ bot.login(process.env.TOKEN);
 bot.on('message',message => {
     if (message.content === prefix + "solus"){
         message.reply("Solus est un MMO FPS français en dévelopemet");
+    }
+   
+    if (message.content === + "**meurt**"){
+        message.reply("**s'allonge sur lui tristement**");
+    }
+    if (message.content === "miaou"){
+        message.reply("miaou");
+    }
+    
+    if (message.content === "folki viens ici"){
+        message.reply("**arrive joyeusement**");
+        console.log("commande Salut effectué");
+    }
+
+    if (message.content === "caresse folki"){
+        message.reply("**ronronne**");
     }
 
     if (message.content === prefix + "beta"){
