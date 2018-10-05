@@ -43,6 +43,18 @@ bot.on('message',message => {
         message.reply("nani ?");
     }
     
+    if (message.content === "folki"){
+        message.reply("**s'en bas les couilles**");
+    }
+    
+    if (message.content === "bonjour folki"){
+        message.reply("bonjour");
+    }
+    
+    if (message.content === "ça va"){
+        message.reply("oui et toi ?");
+    }
+    
     if (message.content === "caresse folki"){
         message.reply("**ronronne**");
     }
