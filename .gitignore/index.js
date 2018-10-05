@@ -39,7 +39,7 @@ bot.on('message',message => {
         console.log("commande Salut effectué");
     }
     
-    if (message.content === "assit"){
+    if (message.content === "s!assit"){
         message.reply("**s'assoit**");
     }
     
@@ -63,19 +63,19 @@ bot.on('message',message => {
         message.reply("http://www.icone-gif.com/gif/humour/pipi-caca/pipi_caca005.gif");
     }
     
-    if (message.content === "bien"){
+    if (message.content === "s!bien"){
         message.reply("ok et tu m'aime ?");
     }
     
-    if (message.content === "mal"){
+    if (message.content === "s!mal"){
         message.reply("oh désolé");
     }
     
-    if (message.content === "oui"){
+    if (message.content === "s!oui"){
         message.reply("tu est gentil et tu est quoi comme race ?");
     }
     
-    if (message.content === "non"){
+    if (message.content === "s!non"){
         message.reply("t méchant **boude**");
     }
     
@@ -98,7 +98,7 @@ bot.on('message',message => {
         message.reply("ouhhh tu fait peur");
     }
     
-    if (message.content === "merci"){
+    if (message.content === "s!merci"){
         message.reply("de rien");
     }
     
@@ -110,7 +110,7 @@ bot.on('message',message => {
         message.reply("bonjour");
     }
     
-    if (message.content === "ça va"){
+    if (message.content === "s!ça va"){
         message.reply("oui et toi ?");
     }
     
@@ -118,12 +118,12 @@ bot.on('message',message => {
         message.reply("**ronronne**");
     }
 
-    if (message.content === prefix + "beta"){
+    if (message.content === prefix + "s!beta"){
         message.reply("http://www.solus-enterprise.co.nf/");
         console.log("commande Salut effectué");
     }
 
-    if (message.content === prefix + "paidks"){
+    if (message.content === prefix + "s!paidks"){
         message.reply("It's my dady");
     }
     
