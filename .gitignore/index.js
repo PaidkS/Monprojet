@@ -43,6 +43,49 @@ bot.on('message',message => {
         message.reply("nani ?");
     }
     
+    if (message.content === "FOLKI"){
+        message.reply("miaou miaou **arrive**");
+    }
+    
+    if (message.content === "bien"){
+        message.reply("ok et tu m'aime ?");
+    }
+    
+    if (message.content === "mal"){
+        message.reply("oh désolé");
+    }
+    
+    if (message.content === "oui"){
+        message.reply("tu est gentil et tu est quoi comme race ?");
+    }
+    
+    if (message.content === "non"){
+        message.reply("t méchant **boude**");
+    }
+    
+    if (message.content === "démon"){
+        message.reply("ahhh **part**");
+    }
+    
+    if (message.content === "ange"){
+        message.reply("moi aussi sauf que je suis Dieu");
+    }
+    if (message.content === "humain"){
+        message.reply("normal quoi");
+    }
+    
+    if (message.content === "neko"){
+        message.reply("trop kawaii");
+    }
+    
+    if (message.content === "homme bête"){
+        message.reply("ouhhh tu fait peur");
+    }
+    
+    if (message.content === "merci"){
+        message.reply("de rien");
+    }
+    
     if (message.content === "folki"){
         message.reply("**s'en bas les couilles**");
     }
