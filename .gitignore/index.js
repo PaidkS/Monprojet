@@ -34,7 +34,11 @@ bot.on('message',message => {
         message.reply("**arrive joyeusement**");
         console.log("commande Salut effectué");
     }
-
+    
+    if (message.content === "assit"){
+        message.reply("**s'assoit**");
+    }
+    
     if (message.content === "caresse folki"){
         message.reply("**ronronne**");
     }
