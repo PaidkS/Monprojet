@@ -19,7 +19,7 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message',message => {
-    if (message.content === prefix + "solus"){
+    if (message.content === "s!solus"){
         message.reply("Solus est un MMO FPS français en dévelopemet");
     }
    
@@ -118,12 +118,12 @@ bot.on('message',message => {
         message.reply("**ronronne**");
     }
 
-    if (message.content === prefix + "s!beta"){
+    if (message.content === "s!beta"){
         message.reply("http://www.solus-enterprise.co.nf/");
         console.log("commande Salut effectué");
     }
 
-    if (message.content === prefix + "s!paidks"){
+    if (message.content === "s!paidks"){
         message.reply("It's my dady");
     }
     
