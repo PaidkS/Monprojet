@@ -51,7 +51,7 @@ bot.on('message',message => {
         message.reply("nani ?");
     }
     
-    if (message.content === "FOLKI"){
+    if (message.content === "folki !"){
         message.reply("miaou miaou **arrive**");
     }
     
