@@ -134,7 +134,7 @@ bot.on('message',message => {
             .addField("s!help","Page d'aide", true) 
             .addField("s!solus","Informations sur le jeux", true)
             .addField("s!beta","Informations sur la bêta", true)
-            .addField("s!level","Ton level", true)
+            .addField("folki","Ton level", true)
             .addField("s!meme","Un meme aléatoire", true)
             .addField("s!paidks","Moi =)", true)
             .setColor("0xFF0000") 
