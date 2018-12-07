@@ -19,110 +19,42 @@ bot.login(process.env.TOKEN);
 
 
 bot.on('message',message => {
-    if (message.content === "s!solus"){
-        message.reply("Solus est un MMO FPS français en dévelopemet");
-    }
+    if (message.content === "s!combat"){
+        message.reply("Le système de combat peut paraître compliqué au première abord mais en réalité il est très simple à prendre en mains.
+
+
+Tout d'abord avant d'effectuer une action quelle quel soit. (comme attaquer un boss ennemi par exemple) le joueur se verra dans l'obligation de faire un ^^roll.
+
+Si le nombre obtenue et supérieur a 50 alors l'attaque contre le boss est réussi est dans ce cas la vous devez faire un ^^roll +500. 
+
+si au contraire le résultat en question et inférieur a 50 dans ce cas vous ratez votre attaque et le boss vous met un coup. dans ce cas vous devez faire ^^roll -500 
+
+
+À noté que la valeur des ^^roll + et - change en fonction des paliers
+
+Exemple 
+
+Palier de 1 à 5 vous devez faire ^^roll +250/^^roll -250
+
+Palier de 5 à 10 vous devez faire ^^roll +500/^^roll -500
+
+maintenant que vous connaissez les commandes de base je vais vous expliquer comment calculer les degats reçu ou au contraire les dégâts que vous infliger a l'ennemie.
+
+
+Pour cet exemple nous allons imaginer que vous soyer un combattant niveau 12 il y a 3 statistique qui vont influencer un combat RP et qui sont en rapport avec votre personnage 
+
+
+[PV] Tout d'abord, nous avons les PV qui est votre jauge de vie, lorsque vos PV tombent a zéro vous mourez (merci capitaine obvious) :wesmart: 
+
+[ATK] Ensuite, nous avons l'attaque [ATK] est le pourcentage de dégâts en plus que vous infligerai à un ennemi après avoir réussi un ^^roll +500. Imaginons que koya vous sorte "you rolled 392". Vous devez additionner le résultats de Koya + votre pourcentage d'attaque qui est afficher dans vos stats selon votre niveau, pour cette exemple nous avons pris un combattant niveau 12. au lvl 12 vous aurait un bonus de 9,5 % d'attaque[ATK] il vous suffira de faire 392+9,5% = 429.(modifié)
+
+Vous allez donc infliger 429 de dégâts a votre ennemie au lieu de 392.(modifié)
+[DEF]= il s'agit de la réduction des dégâts brut. c'est comme pour [ATK] sauf que la il vous suffira de soustraire les dégâts reçu lors d'une attaque ennemie. Exemple, votre combattant niveau 12 possède 98 de défense [DEF] vous faite un ^^roll -500 et Koya vous sort "you rolled -459. vous allez devoir faire 459 - 98 = 364. 
+
+Vous allez donc recevoir 364 de dégât au lieu de 459");
    
-    if (message.content === "meurt"){
-        message.reply("**s'allonge sur lui tristement**");
-    }
-    if (message.content === "miaou"){
-        message.reply("miaou");
     }
     
-    if (message.content === "jiji"){
-        message.reply("Nique ta mere");
-    }
-    
-    if (message.content === "folki viens ici"){
-        message.reply("**arrive joyeusement**");
-        console.log("commande Salut effectué");
-    }
-    
-    if (message.content === "s!assit"){
-        message.reply("**s'assoit**");
-    }
-    
-    if (message.content === ""){
-        message.reply("miaou miaou **arrive**");
-    }
-    
-    if (message.content === "croquette"){
-        message.reply("nani ?");
-    }
-    
-    if (message.content === "folki !"){
-        message.reply("miaou miaou **arrive**");
-    }
-    
-    if (message.content === "pere noel"){
-        message.reply("http://www.icone-gif.com/gif/humour/pipi-caca/pipi_caca012.gif");
-    }
-    
-    if (message.content === "caca"){
-        message.reply("http://www.icone-gif.com/gif/humour/pipi-caca/pipi_caca005.gif");
-    }
-    
-    if (message.content === "s!bien"){
-        message.reply("ok et tu m'aime ?");
-    }
-    
-    if (message.content === "s!mal"){
-        message.reply("oh désolé");
-    }
-    
-    if (message.content === "s!oui"){
-        message.reply("tu est gentil et tu est quoi comme race ?");
-    }
-    
-    if (message.content === "s!non"){
-        message.reply("t méchant **boude**");
-    }
-    
-    if (message.content === "démon"){
-        message.reply("ahhh **part**");
-    }
-    
-    if (message.content === "ange"){
-        message.reply("moi aussi sauf que je suis Dieu");
-    }
-    if (message.content === "humain"){
-        message.reply("normal quoi");
-    }
-    
-    if (message.content === "neko"){
-        message.reply("trop kawaii");
-    }
-    
-    if (message.content === "homme bête"){
-        message.reply("ouhhh tu fait peur");
-    }
-    
-    if (message.content === "s!merci"){
-        message.reply("de rien");
-    }
-    
-    if (message.content === "folki"){
-        message.reply("**s'en bas les couilles**");
-    }
-    
-    if (message.content === "bonjour folki"){
-        message.reply("bonjour");
-    }
-    
-    if (message.content === "s!ça va"){
-        message.reply("oui et toi ?");
-    }
-    
-    if (message.content === "caresse folki"){
-        message.reply("**ronronne**");
-    }
-
-    if (message.content === "s!beta"){
-        message.reply("http://www.solus-enterprise.co.nf/");
-        console.log("commande Salut effectué");
-    }
-
     if (message.content === "s!paidks"){
         message.reply("It's my dady");
     }
