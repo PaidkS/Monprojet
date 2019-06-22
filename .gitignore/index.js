@@ -29,5 +29,4 @@ bot.on('message', message => {
    
     LOVE SOCIAL https://discord.gg/KSBxDWd`);
    });
-       }
-   })
+    
