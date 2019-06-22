@@ -6,7 +6,7 @@ client.on('ready', function() {
     console.log("Connectedç");
 });
 
-client.login(process.env.TOKEN);
+client.login("process.env.TOKEN");
 
 
 client.on('message', message => {
