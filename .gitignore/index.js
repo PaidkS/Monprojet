@@ -10,7 +10,7 @@ client.login("process.env.TOKEN");
 
 
 client.on("message", (message) => {
-    if(message.content.startsWith('alldm')){
+    if(message.content === "alldm") {
    let cont = message.content.slice(1).split(" ")
            let args = cont.slice(1)
            let member = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
