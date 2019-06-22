@@ -9,7 +9,7 @@ client.on('ready', function() {
 client.login("process.env.TOKEN");
 
 
-client.on("message", message => {
+client.on("message", (message) => {
     if(message.content.startsWith('alldm')){
    let cont = message.content.slice(1).split(" ")
            let args = cont.slice(1)
