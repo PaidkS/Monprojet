@@ -1,15 +1,15 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-bot.on('ready', function() {
+client.on('ready', function() {
     bot.user.setGame("Okue Is Back");
     console.log("Connectedç");
 });
 
-bot.login(process;env.TOKEN);
+client.login(process;env.TOKEN);
 
 
-bot.on('message', message => {
+client.on('message', message => {
     if(message.content.startsWith('alldm')){
    let cont = message.content.slice(1).split(" ")
            let args = cont.slice(1)
