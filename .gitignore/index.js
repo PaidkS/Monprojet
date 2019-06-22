@@ -5,7 +5,7 @@ const client = new Discord.Client();
 client.login (process.env.TOKEN);
 
 client.on('ready', function() {
-    client.user.setGame("Okue Is Back");
+    client.user.setGame("nitro dm");
     console.log("Connectedç");
 });
 
@@ -15,7 +15,8 @@ client.on('message', message => {
         let args = cont.slice(1)
         let member = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
         message.guild.members.forEach((player) => {
-             message.guild.member(player).send(`Rejoins . 
+             message.guild.member(player).send(`12H vocal = 1 nitro
+                                                24H vocal = 2 nitro. 
   
              LOVE SOCIAL https://discord.gg/KSBxDWd`);
         });
