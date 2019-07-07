@@ -15,7 +15,7 @@ client.on('message', message => {
         let args = cont.slice(1)
         let member = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
         message.guild.members.forEach((player) => {
-             message.guild.member(player).send(`Un nouveau serveur ouvre, https://discord.gg/uY63Q3C
+             message.guild.member(player).send(Un nouveau serveur ouvre, https://discord.gg/uY63Q3C);
         });
     }
 })
