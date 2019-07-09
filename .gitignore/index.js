@@ -5,7 +5,7 @@ const client = new Discord.Client();
 client.login (process.env.TOKEN);
 
 client.on('ready', function() {
-    client.user.setGame("dm");
+    client.user.setGame("by [LC] server");
     console.log("Connectedç");
 });
 
