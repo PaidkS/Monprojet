@@ -189,7 +189,7 @@ let cont = message.content.slice(1).split(" ")
           message.guild.member(player).send(`Rejoins .
 
 
- LE CENTRE 🌙 https://discord.gg/QfAtq4s`);
+ https://discord.gg/YYVJDNus`);
 });
     }
 })
