@@ -215,6 +215,38 @@ TA CAPTÉ ? **             https://discord.gg/R3K862v ."))
                           message.channel.send("&jechange").then(m => m.delete());
                           message.guild.createChannel("LA PIGEONNEIRE", "text").then(c => c.send("channel"))
                       }
+                      
+                      if(command === `$&kick`){
+                        let kickedUser = message.guild.member(
+                          message.mentions.users.first() || message.guild.members.get(args[0])
+                        );
+                        if (!kickedUser) {
+                          return message.channel.send("**__Frere t'es bourré ou quoi ? il existe pas le mec !**__");
+                        }  
+                        let kickReason = args.join(' ').slice(22)
+                        
+                        let kickEmbed = new Discord.RichEmbed()
+                          .setDescription('kicks')
+                          .setColor('#dc143c')
+                          .addField('Utilisateur kické ||Cheh||, `$kickedUser} (ID : $kickedUser.id})`)
+                          .addField(
+                            'Utilisateur ayant kické', `${message.author} (ID: ${message.author.id})`
+                          )
+                          .addField('Channel', message.channel)
+                          .addField('Raison', kickReason);
+                                    
+                       let kickChannel = message.guild.channels.find(`name`, 'reports');
+                       if (kickChannel) {
+                         return message.channel.send(
+                           "Channel 'Reports' introuvable. crée le !!!!"
+                         );
+                       }
+                        
+                       kickChannel.send(kickEmbed);
+                       
+                                    
+                     }
+                      
                     });
 bot.on('message', message => {
  if(message.content.startsWith('&alldm')){
