@@ -13,7 +13,7 @@ if(message.content.includes("&kelsair")){
 
 
 const {
-	prefix,
+	!,
 	token,
 } = require('./config.json');
 const ytdl = require('ytdl-core');
