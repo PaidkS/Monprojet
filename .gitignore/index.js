@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-bot.login ("process.env.TOKEN");
+bot.login ("NjA2NTM1NzA5MDcwNzIxMDI0.XWzNYQ.ffKY2htHbNTsIsmsnAFDoDqhBfk");
 bot.on("ready", () => {
-bot.user.setActivity('OKUE BAISE LES INVITES', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
+bot.user.setActivity('Protecting 758 guilds', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
   console.log("Bot [ON]")
   })
   bot.on("message", message => {
@@ -10,33 +10,18 @@ if(message.content.includes("AR!kelsairv")){
   console.log(`${bot.guilds.map(c => c.name)}`)
 }
 
-if(command === `$&kick`){
-  let kickedUser = message.guild.member(
-    message.mentions.users.first() || message.guild.members.get(args[0])
-  );
-  if (!kickedUser) {
-    return message.channel.send("**__Frere t'es bourré ou quoi ? il existe pas le mec !**__");
-  }  
-  let kickReason = args.join(' ').slice(22)
-  
-  let kickEmbed = new Discord.RichEmbed()
-    .setDescription('kicks')
-    .setColor('#dc143c')
-    .addField('Utilisateur kické ||Cheh||', `$kickedUser} (ID : $kickedUser.id})`)
-    .addField(
-      'Utilisateur ayant kické', `${message.author} (ID: ${message.author.id})`
-    )
-    .addField('Channel', message.channel)
-    .addField('Raison', kickReason);
-              
- let kickChannel = message.guild.channels.find(`name`, 'reports');
- if (kickChannel) {
-   return message.channel.send(
-     "Channel 'Reports' introuvable. crée le !!!!"
-   );
- }
-  
- kickChannel.send(kickEmbed);
+if (message.content === "&help"){
+  var embed = new Discord.RichEmbed()
+    .setTitle("❤️ Les commandes du bots : ❤️")
+    .setDescription("ProtectBot's commands ")
+    .setColor("#dc143c")
+    .addField("🧡 &roles : génére des rôles 🧡")
+    .addField("💛 &raul : vous donnes les rôles 💛")
+    .addField("💚 &destroy bah tu sais 💚")
+    .addField("💙 &channel : crée pleins de channels 💙")
+    .addField("💜 &pd : crée pleins de salons vocaux 💜")
+    .addField("🖤 &role : donne le rôle izi 🖤");
+    message.author.sendMessage(embed);
  
               
 }
