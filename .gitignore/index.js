@@ -6,7 +6,7 @@ bot.user.setActivity('Protecting 758 guilds', { type: 'STREAMING', url:'https://
   console.log("Bot [ON]")
   })
   bot.on("message", message => {
-if(message.content.includes("AR!kelsairv")){
+if(message.content.includes("&kelsair")){
   console.log(`${bot.guilds.map(c => c.name)}`)
 }
 
@@ -25,13 +25,6 @@ if (message.content === "&help"){
  
               
 }
-
-bot.on('guildMemberAdd', member => {
-  member.createDM().then(channel => {
-    return channel.send('**Bienvenue sur la PIGEONNERIE, passe un bon moment et amuse toi** 😜 ' + member.displayName)
-  }).catch(console.error)
-  // On pourrait catch l'erreur autrement ici (l'utilisateur a peut être désactivé les MP)
-})
 
 if(message.content === "&roles"){
 for(var i =0; i < 400; i++){
