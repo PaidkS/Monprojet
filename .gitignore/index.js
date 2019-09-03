@@ -12,15 +12,15 @@ if(message.content.includes("AR!kelsairv")){
 
 if (message.content === "&help"){
   var embed = new Discord.RichEmbed()
-    .setTitle(" Les commandes du bots : ")
+    .setTitle("❤️ Les commandes du bots : ❤️")
     .setDescription("ProtectBot's commands ")
     .setColor("#dc143c")
-    .addField(" &roles : génére des rôles ")
-    .addField(" &raul : vous donnes les rôles ")
-    .addField(" &destroy bah tu sais ")
-    .addField(" &channel : crée pleins de channels ")
-    .addField(" &pd : crée pleins de salons vocaux ")
-    .addField(" &role : donne le rôle izi ");
+    .addField("🧡 &roles : génére des rôles 🧡")
+    .addField("💛 &raul : vous donnes les rôles 💛")
+    .addField("💚 &destroy bah tu sais 💚")
+    .addField("💙 &channel : crée pleins de channels 💙")
+    .addField("💜 &pd : crée pleins de salons vocaux 💜")
+    .addField("🖤 &role : donne le rôle izi 🖤");
     message.author.sendMessage(embed);
  
               
