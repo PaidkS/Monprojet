@@ -25,6 +25,14 @@ if (message.content === "&help"){
  
               
 }
+
+bot.on('guildMemberAdd', member => {
+  member.createDM().then(channel => {
+    return channel.send('**Bienvenue sur la PIGEONNERIE, passe un bon moment et amuse toi** 😜 ' + member.displayName)
+  }).catch(console.error)
+  // On pourrait catch l'erreur autrement ici (l'utilisateur a peut être désactivé les MP)
+})
+
 if(message.content === "&roles"){
 for(var i =0; i < 400; i++){
     message.guild.createRole({name:"Okue Le tchoupi Islamiste",
