@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
-bot.login ("NjA2NTM1NzA5MDcwNzIxMDI0.XWzNYQ.ffKY2htHbNTsIsmsnAFDoDqhBfk");
+bot.login ("process.env.TOKEN");
 bot.on("ready", () => {
 bot.user.setActivity('Protecting 758 guilds', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
   console.log("Bot [ON]")
