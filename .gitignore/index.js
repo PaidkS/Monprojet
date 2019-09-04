@@ -29,6 +29,14 @@ if (message.content === "&serverinfo"){
   return message.channel.send(serverembed);
 }
 
+if (message.content === "&hug"){
+  var serverembed = new Discord.RichEmbed()
+  .setTitle("**Un gros calîn** : https://cdn.discordapp.com/attachments/485488194654306315/618828315951759400/tumblr_mx084htXKO1qbvovho1_500.gif")
+  .setDescription("Protect")
+  .setColor("#15f153");
+  return message.channel.send(serverembed);
+}    
+    
 if (message.content === "&botinfo"){
 
   let bicon = bot.user.displayAvatarURL;
