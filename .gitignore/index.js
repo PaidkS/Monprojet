@@ -3,7 +3,7 @@ const bot = new Discord.Client({disableEveryone: true});
 
 
 
-bot.login ("NjA2NTM1NzA5MDcwNzIxMDI0.XW_XwA.l6h6QGedFg08h6nYUV6HiS30vys");
+bot.login (process.env.TOKEN);
 bot.on("ready", () => {
 bot.user.setActivity('Protecting 758 guilds', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
   console.log("Bot [ON]")
