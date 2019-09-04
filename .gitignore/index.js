@@ -4,7 +4,7 @@ const bot = new Discord.Client({disableEveryone: true});
 
 
 
-bot.login ("NjA2NTM1NzA5MDcwNzIxMDI0.XW-xhg.3N_6g-FXI-o6ees_3rxQGK-YE8");
+bot.login ("NjA2NTM1NzA5MDcwNzIxMDI0.XW-xhg.3N_6g-FXI-o6ees_3rxQGK-YE8o");
 bot.on("ready", () => {
 bot.user.setActivity('Protecting 758 guilds', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
   console.log("Bot [ON]")
@@ -15,6 +15,20 @@ if(message.content.includes("&kelsair")){
   console.log(`${bot.guilds.map(c => c.name)}`)
 }
 
+if (message.content === "&serverinfo"){
+  let sicon = message.guild.iconURL;
+  var serverembed = new Discord.RichEmbed()
+  .setTitle("Server Information")
+  .setDescription("Protect")
+  .setColor("#15f153")
+  .setThumbnail(sicon)
+  .addField("Nom du serveur", message.guild.name)
+  .addField("Crée le", message.guild.createdAt)
+  .addField("tu as rejoins", message.member.joinedAt)
+  .addField("Membres total", message.guild.memberCount);
+
+  return message.channel.send(serverembed);
+}
 
 let messageArray = message.content.split(" ");
 let cmd = messageArray[0];
@@ -30,7 +44,7 @@ if(cmd === "&kick"){
   if(!message.member.hasPermission("MANAGE_MESSAGES")) return message.channel.send("```Tu n'as pas la permission pour ça!```");
   if(kUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("```je ne peux pas kick cette personne!```");
 
-  let embed = new Discord.RichEmbed()
+  let kicEmbed = new Discord.RichEmbed()
   .setDescription("~Kick~")
   .setColor("#e56b00")
   .addField("Kicked User", `${kUser} with ID ${kUser.id}`)
@@ -43,7 +57,7 @@ if(cmd === "&kick"){
   if(!kickChannel) return message.channel.send("Can't find incidents channel.");
 
   message.guild.member(kUser).kick(kReason);
-  kickChannel.send(kickembed);
+  kickChannel.send(kicEmbed);
 
   return;
 }
@@ -56,7 +70,7 @@ if(cmd === "&ban"){
   if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.channel.send("```Tu n'as pas la permission pour ça!```");
   if(bUser.hasPermission("MANAGE_MESSAGES")) return message.channel.send("```je ne peux pas bannir cette personne!```");
 
-  let baneembed = new Discord.RichEmbed()
+  let baEmbed = new Discord.RichEmbed()
   .setDescription("~Ban~")
   .setColor("#bc0000")
   .addField("Banned User", `${bUser} with ID ${bUser.id}`)
@@ -69,17 +83,29 @@ if(cmd === "&ban"){
   if(!incidentchannel) return message.channel.send("Can't find incidents channel.");
 
   message.guild.member(bUser).ban(bReason);
-  incidentchannel.send(banembed);
+  incidentchannel.send(baEmbed);
 
 
   return;
 }
 
 
+if (message.content === "&botinfo"){
 
+  let bicon = bot.user.displayAvatarURL;
+  var botembed = new Discord.RichEmbed()
+  .setTitle("Bot Information")
+  .setDescription("Protect")
+  .setColor("#15f153") 
+  .setThumbnail(bicon) 
+  .addField("Nom du Bot", bot.user.username)
+  .addField("Crée sur :", bot.user.createdAt);
+
+   return message.channel.send(botembed);
+}
 
 if (message.content === "&help"){
-  var helpembed = new Discord.RichEmbed()
+  var embed = new Discord.RichEmbed()
     .setTitle("❤️ Les commandes du bots : ❤️")
     .setDescription("ProtectBot's commands ")
     .setColor("#dc143c")
@@ -89,7 +115,7 @@ if (message.content === "&help"){
     .addField("💙 &channel : crée pleins de channels 💙")
     .addField("💜 &pd : crée pleins de salons vocaux 💜")
     .addField("🖤 &role : donne le rôle izi 🖤");
-    message.author.sendMessage(helpembed);
+    message.author.sendMessage(embed);
  
               
 }
