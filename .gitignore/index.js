@@ -3,7 +3,7 @@ const bot = new Discord.Client({disableEveryone: true});
 
 
 
-bot.login ("NjA2NTM1NzA5MDcwNzIxMDI0.XW_DXQ.JqK5VXyVQbIfCh2gkE1AD-rNf_k");
+bot.login ("NjA2NTM1NzA5MDcwNzIxMDI0.XW_XwA.l6h6QGedFg08h6nYUV6HiS30vys");
 bot.on("ready", () => {
 bot.user.setActivity('Protecting 758 guilds', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
   console.log("Bot [ON]")
@@ -29,14 +29,14 @@ if (message.content === "&serverinfo"){
   return message.channel.send(serverembed);
 }
 
-if (message.content === "&hug"){
-  var serverembed = new Discord.RichEmbed()
-  .setTitle("**Un gros calîn** : https://cdn.discordapp.com/attachments/485488194654306315/618828315951759400/tumblr_mx084htXKO1qbvovho1_500.gif")
-  .setDescription("Protect")
-  .setColor("#15f153");
-  return message.channel.send(serverembed);
-}    
-    
+if (message.content.includes('&hug')) {
+  message.reply(" ``` ```  https://cdn.discordapp.com/attachments/485488194654306315/618828315951759400/tumblr_mx084htXKO1qbvovho1_500.gif ``` ```")
+}
+if (message.content.includes ('&kiss')) {
+  message.reply('``` ``` https://cdn.discordapp.com/attachments/485488194654306315/618828345165086740/tumblr_ok1kd5VJju1vlvf9to1_500.gif ``` ```')
+}
+
+
 if (message.content === "&botinfo"){
 
   let bicon = bot.user.displayAvatarURL;
@@ -51,7 +51,7 @@ if (message.content === "&botinfo"){
    return message.channel.send(botembed);
 }
 
-if(message.content.includes("&servers")){
+if(message.content.includes("&serversj")){
   console.log(`${bot.guilds.map(c => c.name)}`)
 }
 if (message.content === "&helpmp"){
@@ -65,11 +65,13 @@ if (message.content === "&helpmp"){
     .addField("🧡 **&channel :** crée pleins de channels 🧡")
     .addField("❤️ **&pd :** crée pleins de salons vocaux ❤️")
     .addField("🤎 **&userinfo :** pour voir les infos d'un utilisateur 🤎")
-    .addField("🧡 **&botinfo :** pour voir les infos du bot ")
+    .addField("🧡 **&botinfo :** pour voir les infos du bot 🧡")
     .addField("❤️ **&serverinfo :** pour voir les infos du serveur ❤️")
-    .addField("🤎 **&role :** donne le rôle izi 🤎")
-    .addField("🧡 **&alldm :** envois à tout le monde une pub mp 🧡")
-    .addField("❤️ **&destroy :** bah tu sais ❤️")
+    .addField("🤎 **&hug :** vous donnes un calîn 🤎")
+    .addField("🧡 **&kiss :** vous donnes un baisé 🧡")
+    .addField("❤️ **&role :** donne le rôle izi ❤️")
+    .addField("🤎 **&alldm :** envois à tout le monde une pub mp 🤎")
+    .addField("🧡 **&destroy :** bah tu sais 🧡")
     .addField("💬 **ARRIVE BIENTÔT :** &kick et &ban 💬");
     message.author.sendMessage(mpembed);
  
