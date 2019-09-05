@@ -37,11 +37,11 @@ if (message.content.includes("&hug"){
   .setDescription("Protect")
   .setColor("#15f153") 
   .setFooter("ça wlh")
-  .setTImage("https://cdn.discordapp.com/attachments/485488194654306315/618828315951759400/tumblr_mx084htXKO1qbvovho1_500.gif") 
+  .setTImage() 
   .addField("Nom du Bot", bot.user.username)
   .addField("Crée sur :", bot.user.createdAt);
 
-   return message.channel.send(hugembed);
+   msgObject.channel.send(hugembed);
 }
 
 if (message.content === "&botinfo"){
