@@ -41,7 +41,7 @@ if (message.content === "&hug"){
   .addField("Nom du Bot", bot.user.username)
   .addField("Crée sur :", bot.user.createdAt);
 
-   return message.channel.send(botembed);
+   return message.channel.send(hugembed);
 }
 
 if (message.content === "&botinfo"){
