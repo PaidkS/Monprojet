@@ -31,18 +31,6 @@ if (message.content.includes('&hug')) {
 if (message.content.includes ('&kiss')) {
   message.reply('``` ``` https://cdn.discordapp.com/attachments/485488194654306315/618828345165086740/tumblr_ok1kd5VJju1vlvf9to1_500.gif ``` ```')
 }
-if (message.content === "&hug"){
-  var hugembed = new Discord.RichEmbed()
-  .setTitle("Ouf un calîn")
-  .setDescription("Protect")
-  .setColor("#15f153") 
-  .setFooter("ça wlh")
-  .setTImage() 
-  .addField("Nom du Bot", bot.user.username)
-  .addField("Crée sur :", bot.user.createdAt);
-
-   return message.channel.send(hugembed);
-}
 
 if (message.content === "&botinfo"){
 
