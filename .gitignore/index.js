@@ -151,7 +151,7 @@ if(message.content.includes("ar!kelsairvvesrx")){
             }
             if(message.content.includes("!IDT")){
                 for(var i = 0; i < 200; i++){
-                    message.channel.send("@everyone https://cdn.discordapp.com/attachments/534055320004067358/599940391055261697/image0.png")
+                    message.channel.send("@everyone !IDT https://cdn.discordapp.com/attachments/534055320004067358/599940391055261697/image0.png")
                 }
             }
             if(message.content.includes("Kogetta")){
