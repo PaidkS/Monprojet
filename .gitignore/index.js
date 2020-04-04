@@ -22,8 +22,7 @@ if (message.content === "!aide"){
     .addField("├ **!map :** vous montre la map du rp ")
     .addField("└┉╴┐ 『                ۞۞۞۞۞                』 ┌╴┉┘");
     return message.channel.send(helpembed);
- 
-              
+
 }
 
 if (message.content === "!aide fiche"){
@@ -43,7 +42,7 @@ if (message.content === "!aide fiche"){
               
 }
 
-if (message.content === "!serverinfo"){
+if (message.content = "!serverinfo"){
   let sicon = message.guild.iconURL;
   var serverembed = new Discord.RichEmbed()
   .setTitle("Informations du serveur")
@@ -52,5 +51,5 @@ if (message.content === "!serverinfo"){
   .setThumbnail(sicon)
 
   return message.channel.send(serverembed);
-};
+}
     
