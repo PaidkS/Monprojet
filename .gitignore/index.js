@@ -17,7 +17,6 @@ bot.on("message", message => {
           .setTitle("💬 Les commandes du bots : 💬")
           .setDescription("┌╴╜          Liste des commandes du bot          ╙╴┐")
           .setColor("#dc143c")
-          .setImage('https://cdn.discordapp.com/attachments/695728674846015545/696086249403842680/Map_serv.png')
           .addField("Début","├ !contexte :")
           .addField("**vous donne le contexte du rp**  ","├ !fiche :" )
           .addField("**vous donne la template fiche rp** ","├ !serverinfo :")
@@ -44,9 +43,15 @@ bot.on("message", message => {
           return message.channel.send(ficheembed);      
                     
       }
-      if (message.content === '!map') {
-        message.reply(" ``` ```Voici une carte non-exhaustive de ce à quoi ressemble le monde pour vous donner une idée. Les points noirs représentent les capitales.   https://cdn.discordapp.com/attachments/695728674846015545/695729234148327455/Map_serv.png ``` ```")
-      }
+      if (message.content === "!map"){
+        var mapembed = new Discord.RichEmbed()
+          .setTitle("Voici la carte du monde de Naenelis :")
+          .setDescription("Voici une carte non-exhaustive de ce à quoi ressemble le monde pour vous donner une idée. Les points noirs représentent les capitales.")
+          .setColor("#dc143c")
+          .setImage('https://cdn.discordapp.com/attachments/695728674846015545/696086249403842680/Map_serv.png');
+          return message.channel.send(mapembed);
+      
+      }  
       
       if (message.content === '!contexte') {
         message.reply(" ``` ```  **Autrefois, il y a une guerre de commerce.Cette guerre s'est d'abord présentée sous forme de taxes sur les marchandises qui circulaientPlus les tensions montaient, plus cette guerre qui était déjà préssentie par la plupart s'approchaitSi ces tensions ont commencé à monter, c'est parce que le roi de l'Ouest, un nom, a prétendu détenir un précieux remède pour la maladie de la peste. Mais, avide de richesses, il a promis de le commercialiser pour des prix exhorbitants. Etant les seuls détenteurs de ce remède et de sa fabrication, les commercants du royaume avaient un monopole total dessus et pouvaient donc le vendre au prix qui leur chantaitLes gens suivirent et achetèrent le remède à n'importe quel prix, sauf qu'il s'est avéré qu'une semaine plus tard après sa mise en vente, un espion du Nord a appris que c'était un faux et que l'Ouest n'avait pas trouvé ce remède miracle.Tout le monde s'était fait berner en beauté et c'est là que les tensions commerciales ont commencé à monterIl y eut beaucoup d'autres cas plus minimes de ce genre qui favorisèrent ce cercle vicieuxLes royaumes qui travaillaient autrefois main dans la main se préparaient et s'armaient en vue d'une guerre qui parraissait de plus en plus inévitableLeur haine était telle qu'on assassina le roi de l'Est. Cela fut l'élément déclencheur de cette guerre.Donc la guerre dura pendant 1 an.Et les dragons dans tout ça, ils observaient les humains depuis les cieux. Dépités de voir leur stupidité décidèrent de séparer le royaume de l'Ouest des autres continentsCe fut une des rares fois dans l'histoire où le dragon géant ancestral qui supporte leur royaume s'est posé sur les terres du centre.Cela s'est passé il y a 4 ans et depuis, le commerce entre les différents royaumes redémarre même si il reste des haines et des tensions.Certains veulent la guerre, d'autres la paix. C'est à vous de décider du destin des royaumes** ``` ```")
