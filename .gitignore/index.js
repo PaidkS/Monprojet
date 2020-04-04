@@ -17,7 +17,7 @@ bot.on("message", message => {
           .setTitle("💬 Les commandes du bots : 💬")
           .setDescription("le serveur qui a pas de nom's commands ")
           .setColor("#dc143c")
-          .addField("","┌╴╜          Liste des commandes du bot          ╙╴┐")
+          .addField("Début","┌╴╜          Liste des commandes du bot          ╙╴┐")
           .addField("**vous donne le contexte du rp**  ", "├ !contexte :")
           .addField("**vous donne la template fiche rp** ","├ !fiche :")
           .addField("**pour voir les infos du serveur** ", "├ !serverinfo :")
