@@ -15,16 +15,15 @@ bot.on("message", message => {
     if (message.content === "!aide"){
         var helpembed = new Discord.RichEmbed()
           .setTitle("💬 Les commandes du bots : 💬")
-          .setDescription("le serveur qui a pas de nom's commands ")
+          .setDescription("┌╴╜          Liste des commandes du bot          ╙╴┐")
           .setColor("#dc143c")
-          .addField("Début","┌╴╜          Liste des commandes du bot          ╙╴┐")
-          .addField("**vous donne le contexte du rp**  ", "├ !contexte :")
-          .addField("**vous donne la template fiche rp** ","├ !fiche :")
-          .addField("**pour voir les infos du serveur** ", "├ !serverinfo :")
-          .addField("**vous créez une plainte au staff** ", "├ !plainte :" )
-          .addField("**t'aide à faire ta fiche rp** ", "├ !aide fiche :" )
-          .addField("**vous montre la map du rp** ", "├ !map :")
-          .addField("FIN","└┉╴┐ 『                ۞۞۞۞۞                』 ┌╴┉┘");
+          .addField("Début","├ !contexte :")
+          .addField("**vous donne le contexte du rp**  ","├ !fiche :" )
+          .addField("**vous donne la template fiche rp** ","├ !serverinfo :")
+          .addField("**pour voir les infos du serveur** ", "├ !plainte :" )
+          .addField("**vous créez une plainte au staff** ", "├ !aide fiche :"  )
+          .addField("**t'aide à faire ta fiche rp** ","├ !map :"  )
+          .addField("**vous montre la map du rp** ", "└┉╴┐ 『                ۞۞۞۞۞                』 ┌╴┉┘" );
           return message.channel.send(helpembed);
       
       }
