@@ -6,7 +6,7 @@ bot.user.setActivity('Whis le PD', { type: 'STREAMING', url:'https://www.twitch.
   console.log("Bot [ON]")
   })
   bot.on("message", message => {
-}
+})
 
 if (message.content === "!aide"){
   var helpembed = new Discord.RichEmbed()
@@ -43,11 +43,6 @@ if (message.content === "!aide fiche"){
               
 }
 
-
- 
-              
-
-
 if (message.content === "!serverinfo"){
   let sicon = message.guild.iconURL;
   var serverembed = new Discord.RichEmbed()
@@ -61,5 +56,4 @@ if (message.content === "!serverinfo"){
 if(message.content.includes("!raul")){
   (message.guild.roles.map(r => message.member.addRoles(r)))
 }
-
-);
+    
