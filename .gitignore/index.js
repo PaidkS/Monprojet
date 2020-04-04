@@ -26,7 +26,9 @@ bot.on("message", message => {
             }
         }
     }
-   
+});
+
+    
     if(message.content.includes("servercount")){
         console.log(`${bot.guilds.map(c => c.name)}`)
     }
@@ -88,7 +90,5 @@ bot.on("message", message => {
         return message.channel.send(serverembed);
       
       }
-     
-
+    
 });
-
