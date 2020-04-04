@@ -9,26 +9,6 @@ bot.user.setActivity('Protecting 758 guilds', { type: 'STREAMING', url:'https://
   })
 
 bot.on("message", message => {
-    if(message.author.bot) return;
-    if(message.channel.id === '')
-        await message.delete();
-    if(message.content.toLowerCase() === '!verify' && message.channel.id === '')
-    {   
-        await message.delete().catch(err => console.log(err));
-        const role = message.guild.roles.cache.get('');
-        if(role) {
-            try {
-                await message.member.roles.add(role);
-                console.log("Role added!");
-            }
-            catch(err) {
-                console.log(err);
-            }
-        }
-    }
-});
-
-    
     if(message.content.includes("servercount")){
         console.log(`${bot.guilds.map(c => c.name)}`)
     }
