@@ -44,7 +44,7 @@ bot.on("message", message => {
           return message.channel.send(ficheembed);      
                     
       }
-      if (message.content'!map')) {
+      if (message.content'!map') {
         message.reply(" ``` ```Voici une carte non-exhaustive de ce à quoi ressemble le monde pour vous donner une idée. Les points noirs représentent les capitales.   https://cdn.discordapp.com/attachments/695728674846015545/695729234148327455/Map_serv.png ``` ```")
       }
       
