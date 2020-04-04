@@ -1,12 +1,15 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
+
 bot.login (process.env.TOKEN);
 bot.on("ready", () => {
 bot.user.setActivity('Whis le PD', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
   console.log("Bot [ON]")
   })
   bot.on("message", message => {
-})
+    if(message.content.includes("servercount")){
+        console.log(`${bot.guilds.map(c => c.name)}`)
+    }
 
 if (message.content === "!aide"){
   var helpembed = new Discord.RichEmbed()
@@ -42,7 +45,7 @@ if (message.content === "!aide fiche"){
               
 }
 
-if (message.content = "!serverinfo"){
+if (message.content === "!serverinfo"){
   let sicon = message.guild.iconURL;
   var serverembed = new Discord.RichEmbed()
   .setTitle("Informations du serveur")
@@ -52,4 +55,3 @@ if (message.content = "!serverinfo"){
 
   return message.channel.send(serverembed);
 }
-    
