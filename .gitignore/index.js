@@ -17,6 +17,7 @@ bot.on("message", message => {
           .setTitle("💬 Les commandes du bots : 💬")
           .setDescription("┌╴╜          Liste des commandes du bot          ╙╴┐")
           .setColor("#dc143c")
+          .setImage('https://cdn.discordapp.com/attachments/695728674846015545/696086249403842680/Map_serv.png')
           .addField("Début","├ !contexte :")
           .addField("**vous donne le contexte du rp**  ","├ !fiche :" )
           .addField("**vous donne la template fiche rp** ","├ !serverinfo :")
