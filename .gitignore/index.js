@@ -17,14 +17,13 @@ bot.on("message", message => {
           .setTitle("💬 Les commandes du bots : 💬")
           .setDescription("le serveur qui a pas de nom's commands ")
           .setColor("#dc143c")
-          .addField("┌╴╜          Liste des commandes du bot          ╙╴┐")
-          .addField("├ **!contexte :**", "vous donne le xontexte du rp  ")
-          .addField("├ **!fiche :**", "vous donne la template fiche rp ")
-          .addField("├ **!serverinfo :**", "pour voir les infos du serveur ")
-          .addField("├ **!plainte :**", "vous crée une plainte au staff ")
-          .addField("├ **!aide fiche :**", "T'aide à faire ta fiche rp ")
-          .addField("├ **!map :**", "vous montre la map du rp ")
-          .setTimestamp()
+          .addField("","┌╴╜          Liste des commandes du bot          ╙╴┐")
+          .addField("**vous donne le contexte du rp**  ", "├ **!contexte :**")
+          .addField("**vous donne la template fiche rp** ","├ **!fiche :**")
+          .addField("**pour voir les infos du serveur** ", "├ **!serverinfo :**")
+          .addField("**vous crée une plainte au staff** ", "├ **!plainte :**" )
+          .addField("**t'aide à faire ta fiche rp** ", "├ **!aide fiche :**" )
+          .addField("**vous montre la map du rp** ", "├ **!map :**")
           .addField("└┉╴┐ 『                ۞۞۞۞۞                』 ┌╴┉┘");
           return message.channel.send(helpembed);
       
