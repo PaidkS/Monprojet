@@ -24,6 +24,7 @@ bot.on("message", message => {
           .addField("├ **!plainte :**", "vous crée une plainte au staff ")
           .addField("├ **!aide fiche :**", "T'aide à faire ta fiche rp ")
           .addField("├ **!map :**", "vous montre la map du rp ")
+          .setTimestamp()
           .addField("└┉╴┐ 『                ۞۞۞۞۞                』 ┌╴┉┘");
           return message.channel.send(helpembed);
       
