@@ -63,5 +63,3 @@ if(message.content.includes("!raul")){
 }
 
 });
-    }
-})
