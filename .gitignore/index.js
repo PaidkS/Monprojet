@@ -44,7 +44,7 @@ bot.on("message", message => {
           .addField(`commandes :`, "``!aide Royaume`` ``!aide Race`` ``!aide Titre`` ``!aide Pouvoir``")         
           .setFooter("Naenelis Bot")
           message.channel.send(dmembed).then(m => m.delete(10000));
-          message.author.send(ficheembed);      
+          message.author.send(ficheembed)      
                     
       }
       if (message.content === "!map"){
