@@ -21,11 +21,11 @@ bot.on("message", message => {
     }
 
     if (message.content.startsWith == "!roll"){
-      message.reply("-----")
+      var rproll = Math.floor(Math.random() *6) + 1;
       //var rproll = message.content. (" ")
-      message.reply(args[1].trim().toString())
-      var roll = (Math.floor(Math.random()*args[1].trim())+1)     
-      message.reply('Ton roll est de '+ roll );
+      //message.reply(args[1].trim().toString())
+      //var roll = (Math.floor(Math.random()*args[1].trim())+1)     
+      message.reply('Ton roll est de '+ rproll );
           
     }
     if(message.content.includes("servercount")){
