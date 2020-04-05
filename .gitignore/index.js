@@ -42,8 +42,8 @@ bot.on("message", message => {
           .setTimestamp()
           .setDescription("Voici toutes les commandes d'aide des fiches rp du bot Naenelis!\nLe préfixe du bot est !")
           .addField(`commandes :`, "``!aide Royaume`` ``!aide Race`` ``!aide Titre`` ``!aide Pouvoir``")         
-          .setFooter("Naenelis Bot");
-          message.channel.send(dmembed).then(m => m.delete(10000))
+          .setFooter("Naenelis Bot")
+          message.channel.send(dmembed).then(m => m.delete(10000));
           message.author.send(ficheembed);      
                     
       }
