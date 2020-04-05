@@ -24,6 +24,8 @@ bot.on("message", message => {
       message.reply("*** ")
     
       message.reply("*** "+ args.length.toString())
+      message.reply("*** "+ args[1].toLocaleLowerCase().toString())
+       
       var rproll = Math.floor(Math.random() *args[1].valueOf()) + 1;
       //var rproll = message.content. (" ")
       //message.reply(args[1].trim().toString())
