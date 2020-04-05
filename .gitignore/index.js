@@ -32,7 +32,7 @@ bot.on("message", message => {
           .setTimestamp()
           .setDescription("🎲" )
           .addField(`**Ton roll est de :**`, rproll )         
-          .setFooter("Naenelis Bot" + bot.user.displayAvatarURL);
+          .setFooter(bot.user.displayAvatarURL +"Naenelis Bot" );
           return message.channel.send(rollembed);      
       //message.reply('Ton roll est de '+ rproll );               
     }        
