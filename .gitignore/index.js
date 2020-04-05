@@ -46,6 +46,7 @@ bot.on("message", message => {
         var mapembed = new Discord.RichEmbed()
           .setTitle("Voici la carte du monde de Naenelis :")
           .setAuthor("Naenelis", bot.user.displayAvatarURL)
+          .setThumbnail("https://cdn.discordapp.com/attachments/695648997838291074/696338169322274816/Logo-final-Nae_1.png")
           .setDescription("Voici une carte non-exhaustive de ce à quoi ressemble le monde pour vous donner une idée. Les points noirs représentent les capitales.")
           .setColor("#dc143c")
           .setImage('https://cdn.discordapp.com/attachments/695728674846015545/696086249403842680/Map_serv.png')
@@ -103,4 +104,3 @@ bot.on("message", message => {
       }
     
 });
-
