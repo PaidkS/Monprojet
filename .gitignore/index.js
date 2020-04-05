@@ -36,7 +36,7 @@ bot.on("message", message => {
           .setColor("#dc143c")
           .setTimestamp()
           .setDescription("Voici toutes les commandes d'aide des fiches rp du bot Naenelis!\nLe préfixe du bot est !")
-          .addField("commandes : ``!aide Royaume`` ``!aide Race`` ``!aide Titre`` ``!aide Pouvoir``")         
+          .addField("commandes :", "``!aide Royaume`` ``!aide Race`` ``!aide Titre`` ``!aide Pouvoir``")         
           .setFooter("Naenelis Bot");
           return message.channel.send(ficheembed);      
                     
