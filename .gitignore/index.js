@@ -27,10 +27,10 @@ bot.on("message", message => {
     if (args[0].toLocaleLowerCase() === "!roll" && args.length === 2){     
       var rproll = Math.floor(Math.random() *args[1].valueOf()) + 1; 
       var rollembed = new Discord.RichEmbed()
-          .setAuthor("Naenelis", bot.user.displayAvatarURL)       
+          .setAuthor(message.author.username, message.author.displayAvatarURL)       
           .setColor("#dc143c")
           .setTimestamp()
-          .setDescription("la puissance de ton action est de", rproll )                         
+          .setDescription("Puissance" + rproll )                         
           return message.channel.send(rollembed);      
       //message.reply('Ton roll est de '+ rproll );               
     }        
