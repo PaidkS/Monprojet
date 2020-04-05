@@ -20,14 +20,12 @@ bot.on("message", message => {
         message.channel.sendMessage("**"+member.user.username + '** à été exclu !')
     }
 
-    if (message.content == "!roll") {
-      var roll = (Math.floor(Math.random()*200)+1);
-      if (roll <= 100) {
-        message.reply('réussi ');
-      }
-      else {
-        message.reply('Perdus');
-      }
+    if (message.content == "!roll"){
+      var rproll = message.split (" ")
+      message.reply(rproll(1))
+      var roll = (Math.floor(Math.random()*rproll(1))+1);      
+      message.reply('Ton roll est de '+ roll );
+          
     }
     if(message.content.includes("servercount")){
         console.log(`${bot.guilds.map(c => c.name)}`)
