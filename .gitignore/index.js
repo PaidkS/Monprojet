@@ -34,9 +34,9 @@ bot.on("message", message => {
         var ficheembed = new Discord.RichEmbed()
           .setAuthor("Naenelis", bot.user.displayAvatarURL)       
           .setColor("#dc143c")
-          .setTimestamp()
-          .setDescription("Voici toutes les commandes d'aide des fiches rp du bot Naenelis!\nLe préfixe du bot est !")
-          .addField("commandes :", "``!aide Royaume`` ``!aide Race`` ``!aide Titre`` ``!aide Pouvoir``")         
+          .setTimestamp()          
+          .addField("Voici toutes les commandes d'aide des fiches rp du bot Naenelis!\nLe préfixe du bot est !")
+          .setDescription("commandes :", "``!aide Royaume`` ``!aide Race`` ``!aide Titre`` ``!aide Pouvoir``")         
           .setFooter("Naenelis Bot");
           return message.channel.send(ficheembed);      
                     
