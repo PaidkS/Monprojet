@@ -9,13 +9,25 @@ bot.user.setActivity('Protecting 758 guilds', { type: 'STREAMING', url:'https://
 
 bot.on("message", message => {
   if (!message.guild) return
+  let args = message.content.trim().split(/ +/g)
+
+  if (args[0].toLocaleLowerCase() === prefix + '!ban'){
+     if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.sendMessage("Ptdr t ki ?")
+     let member = message.mentions.members.first()
+     if (!member) return message.channel.sendMessage("Mentionne un mec là !!!")
+     if (member.highestRole.calculatedPosition >= message.member.highestRole.calculatedPosition && message.author.id !== message.guild.owner.id) return message.channel.sendMessage("tu t'es pris pour qui, tu peux pas le ban")
+     if (!member.bannable) return message.channel.sendMessage("j'ai pas le droit wesh")
+     message.guild.ban(member, {days: 7})
+     message.channel.sendMessage("**"+member.user.username + '** a été banni :white_check_mark:')
+  }
+  if (!message.guild) return
     let args = message.content.trim().split(/ +/g)
 
     if (args[0].toLocaleLowerCase() ===  '!kick'){
-        if (!message.member.hasPermission('KICK_MEMBERS')) return message.channel.sendMessage("Tu n'as pas la permission :heart:")
+        if (!message.member.hasPermission('KICK_MEMBERS')) return message.channel.sendMessage("Ptdr t ki ? ")
         let member = message.mentions.members.first()
-        if (!member) return message.channel.sendMessage("Veuillez menttioner un utilisateur :x:")
-        if (member.highestRole.calculatedPosition >= message.member.highestRole.calculatedPosition && message.author.id !== message.guild.owner.id) return message.channel.sendMessage("Vous ne pouvez pas kick cet utilisateur :x:")
+        if (!member) return message.channel.sendMessage("Mentionne un mec là !!!")
+        if (member.highestRole.calculatedPosition >= message.member.highestRole.calculatedPosition && message.author.id !== message.guild.owner.id) return message.channel.sendMessage("tu t'es pris pour qui, tu peux pas le kick")
         member.kick()
         message.channel.sendMessage("**"+member.user.username + '** à été exclu !')
     }
@@ -23,12 +35,12 @@ bot.on("message", message => {
     if (args[0].toLocaleLowerCase() === "!roll" && args.length === 2){     
       var rproll = Math.floor(Math.random() *args[1].valueOf()) + 1; 
       var rollembed = new Discord.RichEmbed()
-          .setAuthor("Naenelis", bot.user.displayAvatarURL)       
+          .setAuthor("Naenelis", user)       
           .setColor("#dc143c")
           .setTimestamp()
-          .setDescription("Voci ton roll !" )
-          .addField(`Ton roll est de `, rproll )         
-          .setFooter("Naenelis Bot");
+          .setDescription("🎲" )
+          .addField(`**Ton roll est de :**`, rproll )         
+          .setFooter("Naenelis Bot" + bot.user.displayAvatarURL);
           return message.channel.send(rollembed);      
       //message.reply('Ton roll est de '+ rproll );               
     }        
