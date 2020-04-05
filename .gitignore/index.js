@@ -32,7 +32,7 @@ bot.on("message", message => {
       
       if (message.content === "!aide fiche"){
         var dmembed = new Discord.RichEmbed()
-        .setAuthor("Commandre d'aide !", bot.user.displayAvatarURL)
+        .setAuthor("Commandee d'aide !", bot.user.displayAvatarURL)
         .setColor(colours.redlight)
         .setDescription(`${message.author.username} regarde t'es MP !`)
 
@@ -44,7 +44,7 @@ bot.on("message", message => {
           .addField(`commandes :`, "``!aide Royaume`` ``!aide Race`` ``!aide Titre`` ``!aide Pouvoir``")         
           .setFooter("Naenelis Bot");
           message.channel.send(dmembed).then(m => m.delete(10000))
-          return message.channel.send(ficheembed);      
+          message.author.send(ficheembed);      
                     
       }
       if (message.content === "!map"){
