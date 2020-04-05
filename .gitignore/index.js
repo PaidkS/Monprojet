@@ -32,17 +32,11 @@ bot.on("message", message => {
       
       if (message.content === "!aide fiche"){
         var ficheembed = new Discord.RichEmbed()
-          .setAuthor("Naenelis", bot.user.displayAvatarURL)
-          .setTitle("💬 Les commandes du bots : 💬")          
-          .setDescription("ProtectBot's commands ")
+          .setAuthor("Naenelis", bot.user.displayAvatarURL)       
           .setColor("#dc143c")
-          .addField("┌╴╜          Liste des commandes du bot          ╙╴┐")
-          .addField("├ **!aide Royaume :**  ")
-          .addField("├ **!aide Race :**  ")
-          .addField("├ **!aide Titre :**  ")
-          .addField("├ **!aide Pouvoir :**  ")
-          .addField("├ **!aide Histoire :**  ")
-          .addField("└┉╴┐ 『                ۞۞۞۞۞                』 ┌╴┉┘")
+          .setTimestamp()
+          .setDescription("Voici toutes les commandes d'aide des fiches rp du bot Naenelis!\nLe préfixe du bot est !")
+          .addField("commandes : ``!aide Royaume`` ``!aide Race`` ``!aide Titre`` ``!aide Pouvoir``")         
           .setFooter("Naenelis Bot");
           return message.channel.send(ficheembed);      
                     
