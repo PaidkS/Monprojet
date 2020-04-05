@@ -8,6 +8,20 @@ bot.user.setActivity('Protecting 758 guilds', { type: 'STREAMING', url:'https://
   })
 
 bot.on("message", message => {
+    client.on('guildMemberAdd', member =>{
+     let embed = new Discord.RichEmbed()
+         .setDescription(':tada: ' + member.user.username + ' à rejoint ! ' + member.guild.name)
+          .setFooter('Nous sommes désormais ' + member.guild.memberCount)
+      member.guild.channels.get('695647284477558885').sendMessage(embed)
+  });
+
+  client.on('guildMemberRemove', member =>{
+      let embed = new Discord.RichEmbed()
+          .setDescription(':cry: **' + member.user.username + '** a quitté ' + member.guild.name)
+         .setFooter('Nous sommes désormais ' + member.guild.memberCount)
+     member.guild.channels.get('695647284477558885').sendMessage(embed)
+ 
+  });
     if (message.content == "!roll") {
       var roll = (Math.floor(Math.random()*200)+1);
       if (roll <= 100) {
