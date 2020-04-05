@@ -6,6 +6,9 @@ bot.on("ready", () => {
 bot.user.setActivity('Protecting 758 guilds', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
   console.log("Bot [ON]")
   })
+bot.on('guildMemberAdd', member => {
+  member.guild.channels.get('channelID').send('**' + member.user.username + '**, a rejoint le serveur');
+});
 
 bot.on("message", message => {
   if (!message.guild) return
