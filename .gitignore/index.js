@@ -31,14 +31,19 @@ bot.on("message", message => {
       }
       
       if (message.content === "!aide fiche"){
+        var dmembed = new Discord.RichEmbed()
+        .setAuthor("Commandre d'aide !", bot.user.displayAvatarURL)
+        .setColor(colours.redlight)
+        .setDescription(`${message.author.username} regarde t'es MP !`)
+
         var ficheembed = new Discord.RichEmbed()
           .setAuthor("Naenelis", bot.user.displayAvatarURL)       
           .setColor("#dc143c")
-          .setThumbnail("https://cdn.discordapp.com/attachments/695648997838291074/696338169322274816/Logo-final-Nae_1.png")
           .setTimestamp()
           .setDescription("Voici toutes les commandes d'aide des fiches rp du bot Naenelis!\nLe préfixe du bot est !")
           .addField(`commandes :`, "``!aide Royaume`` ``!aide Race`` ``!aide Titre`` ``!aide Pouvoir``")         
           .setFooter("Naenelis Bot");
+          message.channel.send(dmembed).then(m => m.delete(10000))
           return message.channel.send(ficheembed);      
                     
       }
