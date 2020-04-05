@@ -7,7 +7,7 @@ bot.user.setActivity('Protecting 758 guilds', { type: 'STREAMING', url:'https://
   console.log("Bot [ON]")
   })
 bot.on('guildMemberAdd', member => {
-  member.guild.channels.get('channelID').send('**' + member.user.username + '**, a rejoint le serveur');
+  member.guild.channels.get('695647284477558885').send('**' + member.user.username + '**, a rejoint le serveur');
 });
 
 bot.on("message", message => {
