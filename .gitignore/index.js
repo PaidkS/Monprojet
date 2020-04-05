@@ -30,7 +30,7 @@ bot.on("message", message => {
           .setAuthor("Naenelis", bot.user.displayAvatarURL)       
           .setColor("#dc143c")
           .setTimestamp()
-          .setDescription("la puissance de ton action est de" + rproll )                         
+          .setDescription("la puissance de ton action est de", rproll )                         
           return message.channel.send(rollembed);      
       //message.reply('Ton roll est de '+ rproll );               
     }        
