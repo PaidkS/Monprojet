@@ -9,27 +9,15 @@ bot.user.setActivity('Protecting 758 guilds', { type: 'STREAMING', url:'https://
 
 bot.on("message", message => {
   if (!message.guild) return
-    let argss = message.content.trim().split(/ +/g)
- 
-    if (argss[0].toLocaleLowerCase() === prefix + '!ban'){
-        if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.sendMessage("Vous n'avez pas la permission d'utiliser cette commande ;(")
-        let member = message.mentions.members.first()
-        if (!member) return message.channel.sendMessage("Veuillez mentionner un utilisateur :x:")
-        if (member.highestRole.calculatedPosition >= message.member.highestRole.calculatedPosition && message.author.id !== message.guild.owner.id) return message.channel.sendMessage("Vous ne pouvez pas bannir cet utilisateur :x:")
-        if (!member.bannable) return message.channel.sendMessage("Je ne peux pas bannir cet utilisateur :sunglass:")
-        message.guild.ban(member, {days: 7})
-        message.channel.sendMessage("**"+member.user.username + '** a été banni :white_check_mark:')
-    }
-    if (!message.guild) return
-     let args = message.content.trim().split(/ +/g)
+    let args = message.content.trim().split(/ +/g)
 
-      if (args[0].toLocaleLowerCase() ===  '!kick'){
-         if (!message.member.hasPermission('KICK_MEMBERS')) return message.channel.sendMessage("Ptdr t ki ? ")
-          let member = message.mentions.members.first()
-          if (!member) return message.channel.sendMessage("Mentionne un mec là !!!")
-          if (member.highestRole.calculatedPosition >= message.member.highestRole.calculatedPosition && message.author.id !== message.guild.owner.id) return message.channel.sendMessage("tu t'es pris pour qui, tu peux pas le kick")
-         member.kick()
-         message.channel.sendMessage("**"+member.user.username + '** à été exclu !')
+    if (args[0].toLocaleLowerCase() ===  '!kick'){
+        if (!message.member.hasPermission('KICK_MEMBERS')) return message.channel.sendMessage("Ptdr t ki ? ")
+        let member = message.mentions.members.first()
+        if (!member) return message.channel.sendMessage("Mentionne un mec là !!!")
+        if (member.highestRole.calculatedPosition >= message.member.highestRole.calculatedPosition && message.author.id !== message.guild.owner.id) return message.channel.sendMessage("tu t'es pris pour qui, tu peux pas le kick")
+        member.kick()
+        message.channel.sendMessage("**"+member.user.username + '** à été exclu !')
     }
 
 
