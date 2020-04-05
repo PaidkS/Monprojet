@@ -7,7 +7,7 @@ bot.user.setActivity('Protecting 758 guilds', { type: 'STREAMING', url:'https://
   console.log("Bot [ON]")
   })
 bot.on('guildMemberAdd', member => {
-  member.guild.channels.get('695647284477558885').send(" **"Bienvenue member.user.username !"** J'imagine que tu venu ici pour faire du rp non? Si oui, je te conseille de d'abord lire le #├「règlement」📃  pour que tu saches à quoi t'attendre.  Bon rp !");
+  member.guild.channels.get('695647284477558885').send(" *Bienvenue **"member.user.username !"** J'imagine que tu venu ici pour faire du rp non? Si oui, je te conseille de d'abord lire le #├「règlement」📃  pour que tu saches à quoi t'attendre.  Bon rp !");
 });
 
 bot.on("message", message => {
