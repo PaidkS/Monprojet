@@ -26,25 +26,19 @@ bot.on("message", message => {
           .addField("**t'aide à faire ta fiche rp** ","├ !map :"  )
           .addField("**vous montre la map du rp** ", "└┉╴┐ 『                ۞۞۞۞۞                』 ┌╴┉┘" )
           .setFooter("Naenelis Bot");
-          return message.channel.send(helpembed);
+          message.author.send(helpembed);
       
       }
       
       if (message.content === "!aide fiche"){
-        var dmembed = new Discord.RichEmbed()
-        .setAuthor("Commandee d'aide !", bot.user.displayAvatarURL)
-        .setColor(colours.redlight)
-        .setDescription(`${message.author.username} regarde t'es MP !`)
-
         var ficheembed = new Discord.RichEmbed()
           .setAuthor("Naenelis", bot.user.displayAvatarURL)       
           .setColor("#dc143c")
           .setTimestamp()
           .setDescription("Voici toutes les commandes d'aide des fiches rp du bot Naenelis!\nLe préfixe du bot est !")
           .addField(`commandes :`, "``!aide Royaume`` ``!aide Race`` ``!aide Titre`` ``!aide Pouvoir``")         
-          .setFooter("Naenelis Bot")
-          message.channel.send(dmembed).then(m => m.delete(10000));
-          message.author.send(ficheembed)      
+          .setFooter("Naenelis Bot");
+          return message.channel.send(ficheembed);      
                     
       }
       if (message.content === "!map"){
