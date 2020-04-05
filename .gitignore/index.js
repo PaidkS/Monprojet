@@ -11,7 +11,7 @@ bot.on("message", message => {
   if (!message.guild) return
   let args = message.content.trim().split(/ +/g)
 
-  if (args[0].toLocaleLowerCase() === prefix + '!ban'){
+  if (args[0].toLocaleLowerCase() === '!ban'){
      if (!message.member.hasPermission('BAN_MEMBERS')) return message.channel.sendMessage("Ptdr t ki ?")
      let member = message.mentions.members.first()
      if (!member) return message.channel.sendMessage("Mentionne un mec là !!!")
