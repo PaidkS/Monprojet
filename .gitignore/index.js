@@ -34,10 +34,10 @@ bot.on("message", message => {
         var ficheembed = new Discord.RichEmbed()
           .setAuthor("Naenelis", bot.user.displayAvatarURL)       
           .setColor("#dc143c")
+          .setThumbnail("https://cdn.discordapp.com/attachments/695648997838291074/696338169322274816/Logo-final-Nae_1.png")
           .setTimestamp()
           .setDescription("Voici toutes les commandes d'aide des fiches rp du bot Naenelis!\nLe préfixe du bot est !")
-          .addField(`commandes :`)      
-          .setDescription("``!aide Royaume`` ``!aide Race`` ``!aide Titre`` ``!aide Pouvoir``")   
+          .addField(`commandes :`, "``!aide Royaume`` ``!aide Race`` ``!aide Titre`` ``!aide Pouvoir``")         
           .setFooter("Naenelis Bot");
           return message.channel.send(ficheembed);      
                     
@@ -46,7 +46,6 @@ bot.on("message", message => {
         var mapembed = new Discord.RichEmbed()
           .setTitle("Voici la carte du monde de Naenelis :")
           .setAuthor("Naenelis", bot.user.displayAvatarURL)
-          .setThumbnail("https://cdn.discordapp.com/attachments/695648997838291074/696338169322274816/Logo-final-Nae_1.png")
           .setDescription("Voici une carte non-exhaustive de ce à quoi ressemble le monde pour vous donner une idée. Les points noirs représentent les capitales.")
           .setColor("#dc143c")
           .setImage('https://cdn.discordapp.com/attachments/695728674846015545/696086249403842680/Map_serv.png')
