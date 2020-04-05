@@ -20,19 +20,23 @@ bot.on("message", message => {
         message.channel.sendMessage("**"+member.user.username + '** à été exclu !')
     }
 
-    if (args[0].toLocaleLowerCase() === "!roll" && args.length === 2){
-      message.reply("*** ")
-    
-      message.reply("*** "+ args.length.toString())
-      message.reply("*** "+ args[1].toLocaleLowerCase().toString())
-       
-      var rproll = Math.floor(Math.random() *args[1].valueOf()) + 1;
-      //var rproll = message.content. (" ")
-      //message.reply(args[1].trim().toString())
-      //var roll = (Math.floor(Math.random()*args[1].trim())+1)     
-      message.reply('Ton roll est de '+ rproll );
+    if (args[0].toLocaleLowerCase() === "!roll" && args.length === 2){     
+      var rproll = Math.floor(Math.random() *args[1].valueOf()) + 1; 
+      var rollembed = new Discord.RichEmbed()
+          .setAuthor("Naenelis", bot.user.displayAvatarURL)       
+          .setColor("#dc143c")
+          .setTimestamp()
+          .setDescription("Voci ton roll !" )
+          .addField(`Ton roll est de `, rproll )         
+          .setFooter("Naenelis Bot");
+          return message.channel.send(rollembed);      
+      //message.reply('Ton roll est de '+ rproll );               
+    }        
+      
           
-    }
+    
+    
+    
     if(message.content.includes("servercount")){
         console.log(`${bot.guilds.map(c => c.name)}`)
     }
