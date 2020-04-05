@@ -35,8 +35,9 @@ bot.on("message", message => {
           .setAuthor("Naenelis", bot.user.displayAvatarURL)       
           .setColor("#dc143c")
           .setTimestamp()
-          .addField("Voici toutes les commandes d'aide des fiches rp du bot Naenelis!\nLe préfixe du bot est !")
-          .setDescription(`commandes :`, "``!aide Royaume`` ``!aide Race`` ``!aide Titre`` ``!aide Pouvoir``")         
+          .setDescription("Voici toutes les commandes d'aide des fiches rp du bot Naenelis!\nLe préfixe du bot est !")
+          .addField(`commandes :`)      
+          .setDescription("``!aide Royaume`` ``!aide Race`` ``!aide Titre`` ``!aide Pouvoir``")   
           .setFooter("Naenelis Bot");
           return message.channel.send(ficheembed);      
                     
@@ -102,3 +103,4 @@ bot.on("message", message => {
       }
     
 });
+
