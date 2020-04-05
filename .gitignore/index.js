@@ -20,9 +20,9 @@ bot.on("message", message => {
         message.channel.sendMessage("**"+member.user.username + '** à été exclu !')
     }
 
-    if (message.content == "!roll"){
+    if (message.content.startsWith == "!roll"){
       message.reply("-----")
-      var rproll = message.content.split (" ")
+      var rproll = message.content. (" ")
       message.reply(rproll[1].toString)
       var roll = (Math.floor(Math.random()*rproll[1])+1)     
       message.reply('Ton roll est de '+ roll );
