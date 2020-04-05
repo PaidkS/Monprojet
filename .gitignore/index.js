@@ -8,20 +8,18 @@ bot.user.setActivity('Protecting 758 guilds', { type: 'STREAMING', url:'https://
   })
 
 bot.on("message", message => {
-    client.on('guildMemberAdd', member =>{
-     let embed = new Discord.RichEmbed()
-         .setDescription(':tada: ' + member.user.username + ' à rejoint ! ' + member.guild.name)
-          .setFooter('Nous sommes désormais ' + member.guild.memberCount)
-      member.guild.channels.get('695647284477558885').sendMessage(embed)
-  });
+  if (!message.guild) return
+    let args = message.content.trim().split(/ +/g)
 
-  client.on('guildMemberRemove', member =>{
-      let embed = new Discord.RichEmbed()
-          .setDescription(':cry: **' + member.user.username + '** a quitté ' + member.guild.name)
-         .setFooter('Nous sommes désormais ' + member.guild.memberCount)
-     member.guild.channels.get('695647284477558885').sendMessage(embed)
- 
-  });
+    if (args[0].toLocaleLowerCase() ===  '!kick'){
+        if (!message.member.hasPermission('KICK_MEMBERS')) return message.channel.sendMessage("Tu n'as pas la permission :heart:")
+        let member = message.mentions.members.first()
+        if (!member) return message.channel.sendMessage("Veuillez menttioner un utilisateur :x:")
+        if (member.highestRole.calculatedPosition >= message.member.highestRole.calculatedPosition && message.author.id !== message.guild.owner.id) return message.channel.sendMessage("Vous ne pouvez pas kick cet utilisateur :x:")
+        member.kick()
+        message.channel.sendMessage("**"+member.user.username + '** à été exclu !')
+    }
+
     if (message.content == "!roll") {
       var roll = (Math.floor(Math.random()*200)+1);
       if (roll <= 100) {
