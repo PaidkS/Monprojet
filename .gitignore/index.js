@@ -8,6 +8,15 @@ bot.user.setActivity('Protecting 758 guilds', { type: 'STREAMING', url:'https://
   })
 
 bot.on("message", message => {
+    if (message.content == "!roll") {
+      var roll = (Math.floor(Math.random()*200)+1);
+      if (roll <= 100) {
+        message.reply('réussi ');
+      }
+      else {
+        message.reply('Perdus');
+      }
+    }
     if(message.content.includes("servercount")){
         console.log(`${bot.guilds.map(c => c.name)}`)
     }
