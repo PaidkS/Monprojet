@@ -20,7 +20,7 @@ bot.on("message", message => {
         message.channel.sendMessage("**"+member.user.username + '** à été exclu !')
     }
 
-    if (message.content.startsWith == "!roll"){
+    if (message.content.startsWith() == "!roll"){
 
       var rproll = Math.floor(Math.random() *6) + 1;
       //var rproll = message.content. (" ")
