@@ -23,7 +23,7 @@ bot.on("message", message => {
     if (message.content == "!roll"){
       message.reply("-----")
       var rproll = message.content.split (" ")
-      message.reply(rproll[1])
+      message.reply(rproll[1].toString)
       var roll = (Math.floor(Math.random()*rproll[1])+1)     
       message.reply('Ton roll est de '+ roll );
           
