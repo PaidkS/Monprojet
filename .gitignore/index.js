@@ -21,7 +21,8 @@ bot.on("message", message => {
     }
 
     if (args[0].toLocaleLowerCase() == "!roll"){
-      message.reply("*** "+ args[1].toLocaleLowerCase())
+      message.reply("*** ")
+      message.reply("*** "+ args[0].toLocaleLowerCase())
       var rproll = Math.floor(Math.random() *6) + 1;
       //var rproll = message.content. (" ")
       //message.reply(args[1].trim().toString())
