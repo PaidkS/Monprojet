@@ -20,7 +20,7 @@ bot.on("message", message => {
         message.channel.sendMessage("**"+member.user.username + '** à été exclu !')
     }
 
-    if (args[0].toLocaleLowerCase() === "!roll"){
+    if (args[0].toLocaleLowerCase() === "!roll" && args.length === 2){
       message.reply("*** ")
     
       message.reply("*** "+ args.length.toString())
