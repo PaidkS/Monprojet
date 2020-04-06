@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
+const bot = new Discord.Client({disableEveryone: true})
 
 bot.login (process.env.TOKEN);
 bot.on("ready", () => {
@@ -179,9 +180,9 @@ bot.on("message", message => {
           .setAuthor(message.author.username, message.author.displayAvatarURL)       
           .setColor("#dc143c")
           .setTimestamp()          
-          .addField("Niveau : 1", "", true )
-          .addField("Guilde : Aucune", "", true )
-          .addField("Titre : Aucun", "", true )
+          .addField("Niveau : 1", "", True )
+          .addField("Guilde : Aucune", "", True )
+          .addField("Titre : Aucun", "", True )
           .addField(">Stats 📈", "")
           .addField(">Aide 🔍", "")
           .addField(">Option ⚙️", "")        
