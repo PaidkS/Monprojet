@@ -178,7 +178,6 @@ bot.on("message", message => {
           .setAuthor(message.author.username, message.author.displayAvatarURL)       
           .setColor("#dc143c")
           .setTimestamp()
-          .addField('', '')
           .addField('Niveau : 1', '', true)
           .addField('Guilde : Aucune', '', true)
           .addField('Titre : Recrue', '', true)      
