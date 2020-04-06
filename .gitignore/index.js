@@ -175,13 +175,14 @@ bot.on("message", message => {
       }
       if (message.content === "!menu"){
         var menuembed = new Discord.RichEmbed()
-          .setTitlle("Menu de jeu :")
-          .setAuthor(message.author.username, message.author.displayAvatarURL)       
+          .setAuthor("Naenelis", bot.user.displayAvatarURL)       
           .setColor("#dc143c")
-          .setTimestamp()                
+          .setTimestamp()
+          .setDescription("Voici toutes les commandes d'aide des fiches rp du bot Naenelis!\nLe préfixe du bot est !")
+          .addField(`commandes :`, "``!aide Histoire`` ``!aide Race`` ``!aide Pouvoir``")         
           .setFooter("Naenelis Bot");
-          return message.channel.send(menuembed);
-
+          return message.channel.send(menuembed);      
+                    
       }
       if (message.content === '!fiche') {
         message.reply("  ``` nan t'es sérieux ? bon vas voir dans #modèle-de-fiche  ```")
