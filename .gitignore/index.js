@@ -179,7 +179,7 @@ bot.on("message", message => {
           .setColor("#dc143c")
           .setTimestamp()
           .addField(`commandes :`)         
-          .setFooter("Naenelis Bot");
+          .setFooter("Naenelis Bot", "test");
           return message.channel.send(menuembed);      
                     
       }
