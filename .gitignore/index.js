@@ -178,9 +178,9 @@ bot.on("message", message => {
           .setAuthor(message.author.username, message.author.displayAvatarURL)       
           .setColor("#dc143c")
           .setTimestamp()
-          .addField("Niveau : 1", "", true)
-          .addField("Guilde : Aucune", "", true)
-          .addField("Titre : Recrue", "", true)      
+          .addField("Niveau : 1", "\r\n", true)
+          .addField("Guilde : Aucune", "\r\n", true)
+          .addField("Titre : Recrue", "\r\n", true)      
           .setFooter("Naenelis Bot");
           return message.channel.send(menuembed);      
                     
