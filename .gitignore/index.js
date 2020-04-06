@@ -177,13 +177,11 @@ bot.on("message", message => {
         var menuembed = new Discord.RichEmbed()
           .setAuthor(message.author.username, message.author.displayAvatarURL)       
           .setColor("#dc143c")
-          .setTimestamp()          
+          .setTimestamp()
+          .addField('', '')
           .addField('Niveau : 1', '', true)
           .addField('Guilde : Aucune', '', true)
-          .addField('Titre : Recrue', '', true)
-          .addField("Stats 📈")      
-          .addField("Aide 🔍")    
-          .addField("Option ⚙️")       
+          .addField('Titre : Recrue', '', true)      
           .setFooter("Naenelis Bot");
           return message.channel.send(menuembed);      
                     
