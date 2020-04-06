@@ -178,6 +178,8 @@ bot.on("message", message => {
           .setAuthor(message.author.username, message.author.displayAvatarURL)       
           .setColor("#dc143c")
           .setTimestamp()
+          .addField('commandes :', 'test', true)
+          .addField('commandes :', 'test', true)
           .addField('commandes :', 'test', true)         
           .setFooter("Naenelis Bot");
           return message.channel.send(menuembed);      
