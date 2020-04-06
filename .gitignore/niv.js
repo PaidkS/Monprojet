@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
   if (!exp[message.author.id]) {
     exp[message.author.id] = {
       exp: 0,
-      niveau 1
+      niveau: 1
     };
   }
   
@@ -20,7 +20,7 @@ module.exports.run = async (bot, message, args) => {
     .addField('Niveau :', cNiv, true)
     .setTimestamp()
     .setFooter("Naenelis Bot");
-    );
+    
   
   message.channel.send(nivEmbed);
 };
