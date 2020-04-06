@@ -178,7 +178,8 @@ bot.on("message", message => {
           .setAuthor(message.author.username, message.author.displayAvatarURL)       
           .setColor("#dc143c")
           .setTimestamp()
-          .addField(' ', 'Niveau : 1', true)
+          .
+          .addField('Niveau : 1', null, true)
           .addField('Guilde : Aucune', 'test', true)
           .addField('Titre : Recrue', 'test', true)      
           .setFooter("Naenelis Bot");
