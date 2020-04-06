@@ -178,7 +178,7 @@ bot.on("message", message => {
           .setAuthor(message.author.username, message.author.displayAvatarURL)       
           .setColor("#dc143c")
           .setTimestamp()
-          .addField(`commandes :`, "``!aide Histoire`` ``!aide Race`` ``!aide Pouvoir``")         
+          .addField(`commandes :`, "", true)         
           .setFooter("Naenelis Bot");
           return message.channel.send(menuembed);      
                     
