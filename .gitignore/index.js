@@ -178,13 +178,7 @@ bot.on("message", message => {
           .setTitlle("Menu de jeu :")
           .setAuthor(message.author.username, message.author.displayAvatarURL)       
           .setColor("#dc143c")
-          .setTimestamp()          
-          .addField("Niveau : 1")
-          .addField("Guilde : Aucune")
-          .addField("Titre : Aucun")
-          .addField(">Stats")
-          .addField(">Aide")
-          .addField(">Option")        
+          .setTimestamp()                
           .setFooter("Naenelis Bot");
           return message.channel.send(menuembed);
 
