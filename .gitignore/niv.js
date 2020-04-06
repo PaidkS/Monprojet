@@ -11,8 +11,7 @@ module.exports.run = async (bot, message, args) => {
   
   let cExp = exp[message.author.id].exp;
   let cNiv = exp[message.author.id].Niveau;
-  let nextLevelUp =cNiv * 15;
-  let expNeededForLevelUp = nextLevelUp = cExp;
+  let nextLevelUp = cNiv * 10;  
   
   let nivEmbed = new Discord.RichEmbed()
     .setAuthor(message.author.username, message.author.displayAvatarURL)
