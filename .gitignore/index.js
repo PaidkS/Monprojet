@@ -126,7 +126,83 @@ bot.on("message", message => {
           .setFooter("Naenelis Bot");
           return message.channel.send(ficheembed);      
                     
-      }             
+      }
+      //!summon commandes
+      
+      if (message.content === "!summon monstre tier 1"){
+        var tiersembed = new Discord.RichEmbed()
+          .setAuthor("Naenelis", bot.user.displayAvatarURL)       
+          .setColor("#dc143c")
+          .setTimestamp()
+          .setDescription("Voici toutes les commandes d'aide des fiches rp du bot Naenelis!\nLe préfixe du bot est !")
+          .addField(`commandes :`, "``!aide Histoire`` ``!aide Race`` ``!aide Pouvoir``")         
+          .setFooter("Naenelis Bot");
+          return message.channel.send(tiersembed);      
+                    
+      }
+      if (message.content === "!summon monstre tier 2"){
+        var tierssembed = new Discord.RichEmbed()
+          .setAuthor("Naenelis", bot.user.displayAvatarURL)       
+          .setColor("#dc143c")
+          .setTimestamp()
+          .setDescription("Voici toutes les commandes d'aide des fiches rp du bot Naenelis!\nLe préfixe du bot est !")
+          .addField(`commandes :`, "``!aide Histoire`` ``!aide Race`` ``!aide Pouvoir``")         
+          .setFooter("Naenelis Bot");
+          return message.channel.send(tierssembed);      
+                    
+      }
+      if (message.content === "!summon monstre tier 3"){
+        var tiersssembed = new Discord.RichEmbed()
+          .setAuthor("Naenelis", bot.user.displayAvatarURL)       
+          .setColor("#dc143c")
+          .setTimestamp()
+          .setDescription("Voici toutes les commandes d'aide des fiches rp du bot Naenelis!\nLe préfixe du bot est !")
+          .addField(`commandes :`, "``!aide Histoire`` ``!aide Race`` ``!aide Pouvoir``")         
+          .setFooter("Naenelis Bot");
+          return message.channel.send(tiersssembed);      
+                    
+      }
+      if (message.content === "!summon monstre tier 4"){
+        var tierssssembed = new Discord.RichEmbed()
+          .setAuthor("Naenelis", bot.user.displayAvatarURL)       
+          .setColor("#dc143c")
+          .setTimestamp()
+          .setDescription("Voici toutes les commandes d'aide des fiches rp du bot Naenelis!\nLe préfixe du bot est !")
+          .addField(`commandes :`, "``!aide Histoire`` ``!aide Race`` ``!aide Pouvoir``")         
+          .setFooter("Naenelis Bot");
+          return message.channel.send(tierssssembed);      
+                    
+      }
+      let addExp = Math.floor(Math.random() * 13) + 1;
+
+      if (!exp[message.author.id]) {
+        exp[message.auhtor.id] = {
+          exp: 0,
+          niveau : 1
+        };
+      }
+
+      let currentExp = exp[message.author.id].exp;
+      let currentNiv = exp[message.author.id].niveau;
+      let nextLevel = currentNiv * 10;
+      exp[message.author.id].exp =currentExp + addExp;
+
+      if (nextLevel <= currentExp) {
+        exp[message.author.id].niveau += 1;
+        message.channel
+          .send("Tu as atteint le niveau ${currentNiv + 1}")
+          .then(msg => {
+            msg.delete(10000);
+          
+          });
+      }
+
+      fs.writeFile('./exp.json', JSON.stringify(exp), err => {
+        if (err)  console.log(err);
+      });
+
+
+
       if (message.content === '!fiche') {
         message.reply("  ``` nan t'es sérieux ? bon vas voir dans #modèle-de-fiche  ```")
       }
