@@ -80,7 +80,7 @@ bot.on("message", message => {
           .setTimestamp()
           .setDescription("Voici une carte non-exhaustive de ce à quoi ressemble le monde pour vous donner une idée. Les points noirs représentent les capitales.")
           .setColor("#dc143c")
-          .setImage('https://cdn.discordapp.com/attachments/695728674846015545/696086249403842680/Map_serv.png')
+          .setImage('https://cdn.discordapp.com/attachments/491648927745966118/696420198399475782/5cdcbaa59eca5c9d1179732ee6c8b978_1.png')
           .setFooter("Naenelis Bot");
           return message.channel.send(mapembed);
       
@@ -173,36 +173,22 @@ bot.on("message", message => {
           return message.channel.send(tierssssembed);      
                     
       }
-      let addExp = Math.floor(Math.random() * 13) + 1;
+      if (message.content === "!menu"){
+        var menuembed = new Discord.RichEmbed()
+          .setTitlle("Menu de jeu :")
+          .setAuthor(message.author.username, message.author.displayAvatarURL)       
+          .setColor("#dc143c")
+          .setTimestamp()          
+          .addField("Niveau : 1","", true )
+          .addField("Guilde : Aucune","", true )
+          .addField("Titre : Aucun","", true )
+          .addField(">Stats 📈","", false )
+          .addField(">Aide 🔍","", false )
+          .addField(">Option ⚙️","", false )        
+          .setFooter("Naenelis Bot");
+          return message.channel.send(menuembed);
 
-      if (!exp[message.author.id]) {
-        exp[message.auhtor.id] = {
-          exp: 0,
-          niveau : 1
-        };
       }
-
-      let currentExp = exp[message.author.id].exp;
-      let currentNiv = exp[message.author.id].niveau;
-      let nextLevel = currentNiv * 10;
-      exp[message.author.id].exp =currentExp + addExp;
-
-      if (nextLevel <= currentExp) {
-        exp[message.author.id].niveau += 1;
-        message.channel
-          .send("Tu as atteint le niveau ${currentNiv + 1}")
-          .then(msg => {
-            msg.delete(10000);
-          
-          });
-      }
-
-      fs.writeFile('./exp.json', JSON.stringify(exp), err => {
-        if (err)  console.log(err);
-      });
-
-
-
       if (message.content === '!fiche') {
         message.reply("  ``` nan t'es sérieux ? bon vas voir dans #modèle-de-fiche  ```")
       }
