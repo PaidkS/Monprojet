@@ -179,12 +179,12 @@ bot.on("message", message => {
           .setAuthor(message.author.username, message.author.displayAvatarURL)       
           .setColor("#dc143c")
           .setTimestamp()          
-          .addField("Niveau : 1", "", True )
-          .addField("Guilde : Aucune", "", True )
-          .addField("Titre : Aucun", "", True )
-          .addField(">Stats 📈", "", False )
-          .addField(">Aide 🔍", "", False )
-          .addField(">Option ⚙️", "", False )        
+          .addField("Niveau : 1", "", true )
+          .addField("Guilde : Aucune", "", true )
+          .addField("Titre : Aucun", "", true )
+          .addField(">Stats 📈", "")
+          .addField(">Aide 🔍", "")
+          .addField(">Option ⚙️", "")        
           .setFooter("Naenelis Bot");
           return message.channel.send(menuembed);
 
