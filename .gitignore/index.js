@@ -181,9 +181,9 @@ bot.on("message", message => {
           .addField(".", "**Niveau : 1**", true)
           .addField(".", "**Guilde : Aucune**", true)
           .addField(".", "**Titre : Recrue**", true)     
-          .addField("───────────────────", "Stats 📈")      
-          .addField("───────────────────", "Aide 🔍")    
-          .addField("───────────────────", "Option ⚙️")  
+          .addField("─────", "Stats 📈")      
+          .addField("─────", "Aide 🔍")    
+          .addField("─────", "Option ⚙️")  
           .setFooter("Naenelis Bot");
           return message.channel.send(menuembed);      
                     
