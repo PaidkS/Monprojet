@@ -175,10 +175,9 @@ bot.on("message", message => {
       }
       if (message.content === "!menu"){
         var menuembed = new Discord.RichEmbed()
-          .setAuthor("Naenelis", bot.user.displayAvatarURL)       
+          .setAuthor(message.author.username, message.author.displayAvatarURL)       
           .setColor("#dc143c")
           .setTimestamp()
-          .setDescription("Voici toutes les commandes d'aide des fiches rp du bot Naenelis!\nLe préfixe du bot est !")
           .addField(`commandes :`, "``!aide Histoire`` ``!aide Race`` ``!aide Pouvoir``")         
           .setFooter("Naenelis Bot");
           return message.channel.send(menuembed);      
