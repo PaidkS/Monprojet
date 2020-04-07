@@ -183,12 +183,17 @@ bot.on("message", message => {
           .addField(".", "**Niveau : 1**", true)
           .addField(".", "**Guilde : Aucune**", true)
           .addField(".", "**Titre : Recrue**", true)     
-          .addField("─────", "Stats 📈")      
-          .addField("─────", "Aide 🔍")    
-          .addField("─────", "Option ⚙️")  
-          .setFooter("Naenelis Bot");
-          return message.channel.send(menuembed);      
-                    
+          .addField("──────────", "**Ouvrir son grimmoire 📖")      
+          .addField("──────────", "Ouvrir le menu d'aide 🔍")    
+          .addField("──────────", "Ouvrir le menu Option ⚙️")  
+          .setFooter("Naenelis Bot")
+          message.channel.send(menuembed)      
+            .then(msg => msg.react('📖'))
+            .then(mReaction => mReaction.message.react('🔍'))
+            .then(mReaction => mReaction.message.react('⚙️'))
+            .then(mReaction => {
+
+           })       
       }       
       
       if (message.content === '!fiche') {
