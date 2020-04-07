@@ -35,12 +35,7 @@ bot.on("message", message => {
           .setDescription("Puissance  **"+ rproll + "**" )                         
           return message.channel.send(rollembed);      
       //message.reply('Ton roll est de '+ rproll );               
-    }        
-      
-          
-    
-    
-    
+    }                                    
     if(message.content.includes("servercount")){
         console.log(`${bot.guilds.map(c => c.name)}`)
     }
@@ -125,7 +120,7 @@ bot.on("message", message => {
           .setAuthor("Naenelis", bot.user.displayAvatarURL)       
           .setColor("#dc143c")
           .setTimestamp()
-          .setDescription("``` ``` \n **Tu dois écrire l'histoire de ton personnage, 5 lignes minimum sur pc et 10 lignes sur téléphone.** \n  ``` ```")         
+          .setDescription("``` ``` \n **Tu dois écrire l'histoire de ton personnage, 8 lignes minimum sur pc et 10 lignes sur téléphone.** \n  ``` ```")         
           .setFooter("Naenelis Bot");
           return message.channel.send(ficheembed);      
                     
