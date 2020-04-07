@@ -201,7 +201,9 @@ bot.on("message", message => {
 
            })       
       }       
-      
+      if (message.content === "send nudes") {
+        message.reply("<a:8890_PikachuCool:697063725412384798> viens dm bb")
+      }
       if (message.content === '!fiche') {
         message.reply("  ``` nan t'es sérieux ? bon vas voir dans #modèle-de-fiche  ```")
       }
