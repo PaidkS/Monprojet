@@ -50,7 +50,7 @@ bot.on("message", message => {
           .setAuthor("Naenelis", bot.user.displayAvatarURL)
           .setTitle("💬 Les commandes du bots : 💬")
           .setTimestamp()
-          .setDescription("┌╴╜          Liste des commandes du bot          ╙╴┐")
+          .setDescription("**Voici les commandes de base du bot :\nLe préfixe du bot est !**")
           .setColor("#dc143c")
           .addField("Début","├ !contexte :")
           .addField("**vous donne le contexte du rp**  ","├ !fiche :" )
@@ -69,8 +69,9 @@ bot.on("message", message => {
           .setAuthor("Naenelis", bot.user.displayAvatarURL)       
           .setColor("#dc143c")
           .setTimestamp()
-          .setDescription("Voici toutes les commandes d'aide des fiches rp du bot Naenelis!\nLe préfixe du bot est !")
-          .addField(`commandes :`, "``!aide Histoire`` ``!aide Race`` ``!aide Pouvoir``")         
+          .setDescription("**Voici toutes les commandes d'aide des fiches rp du bot Naenelis!\nLe préfixe du bot est !**")
+          .addField(`<:3263_Blank:697073139099893780>`, "**Commandes :**")   
+          .addField("``!aide Histoire`` ``!aide Race`` ``!aide Pouvoir``")      
           .setFooter("Naenelis Bot");
           return message.channel.send(ficheembed);      
                     
@@ -92,7 +93,7 @@ bot.on("message", message => {
           .setTitle("Voici le contexte du monde de Naenelis : <a:2765_pika_cheer:697063554058158084> ")
           .setAuthor("Naenelis", bot.user.displayAvatarURL)
           .setTimestamp()
-          .setDescription(" Naenelis est un royaume assez récent qui vit toujours aujourd'hui. Il possède une superficie assez étendue lui permettant d'avoir plusieurs topographies différentes. Ce royaume a été fondé il y à 512 ans de cela. Un groupe de 81 personnes est venu s'installer ici en provenance d'un monde inconnu. Tous les savoirs sur cet ancien monde ont disparu en même temps que le décès des fondateurs qui ne voulaient pas mettre au courant leurs descendants de ces savoirs. On suppose qu'ils avaient été bannis de leur monde mais rien de certain. Donc ils créèrent une colonie sur ce territoire inexploré. La colonie eut plusieurs soucis à sa création, mais 10 ans plus tard, un groupe de 200 personnes rejoignit la colonie. Ils avaient été bannis eux aussi de ce monde mais ne donnèrent aucun détail quant à la raison de leur expulsion. Ils s'intégrèrent bien à la colonie et l'aidèrent à se développer. Il y eut une vingtaine de groupes qui avaient été bannis eux aussi même si aucun d'eux ne donna d'information sur leur ancienne vie. Au final, il y avait bien 6 races différentes dans ce royaume car les groupes ammenaient des orques, des nains, des elfes, des vampires et j'en passe. Ce fut un bond dans l'avancé de ce nouveau royaume. Il se développa de plus en plus jusqu'à prendre une grande ampleur. Aujourd'hui, ce royaume étend sa juridiction sur un quart du continent sur lequel ils se trouvent. Vous êtes des citoyens de ce royaume et votre but va être de gravir les échelons dans cette société toute jeune. Et en cela, vous devrez faire vos preuves...")
+          .setDescription(" ``` ``` \n Naenelis est un royaume assez récent qui vit toujours aujourd'hui. Il possède une superficie assez étendue lui permettant d'avoir plusieurs topographies différentes. Ce royaume a été fondé il y à 512 ans de cela. Un groupe de 81 personnes est venu s'installer ici en provenance d'un monde inconnu. Tous les savoirs sur cet ancien monde ont disparu en même temps que le décès des fondateurs qui ne voulaient pas mettre au courant leurs descendants de ces savoirs. On suppose qu'ils avaient été bannis de leur monde mais rien de certain. Donc ils créèrent une colonie sur ce territoire inexploré. La colonie eut plusieurs soucis à sa création, mais 10 ans plus tard, un groupe de 200 personnes rejoignit la colonie. Ils avaient été bannis eux aussi de ce monde mais ne donnèrent aucun détail quant à la raison de leur expulsion. Ils s'intégrèrent bien à la colonie et l'aidèrent à se développer. Il y eut une vingtaine de groupes qui avaient été bannis eux aussi même si aucun d'eux ne donna d'information sur leur ancienne vie. Au final, il y avait bien 6 races différentes dans ce royaume car les groupes ammenaient des orques, des nains, des elfes, des vampires et j'en passe. Ce fut un bond dans l'avancé de ce nouveau royaume. Il se développa de plus en plus jusqu'à prendre une grande ampleur. Aujourd'hui, ce royaume étend sa juridiction sur un quart du continent sur lequel ils se trouvent. Vous êtes des citoyens de ce royaume et votre but va être de gravir les échelons dans cette société toute jeune. Et en cela, vous devrez faire vos preuves...\n ``` ```")
           .setColor("#dc143c")
           .setFooter("Naenelis Bot");
           return message.channel.send(mapembed);
