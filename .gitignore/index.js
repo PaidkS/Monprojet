@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 
 bot.login (process.env.TOKEN);
 bot.on("ready", () => {
-bot.user.setActivity('Protecting 758 guilds', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
+bot.user.setActivity('!menu', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
   console.log("Bot [ON]")
   })
 bot.on('guildMemberAdd', member => {
@@ -183,15 +183,21 @@ bot.on("message", message => {
           .addField(".", "**Niveau : 1**", true)
           .addField(".", "**Guilde : Aucune**", true)
           .addField(".", "**Titre : Recrue**", true)     
-          .addField("──────────", "**Ouvrir son grimmoire 📖")      
-          .addField("──────────", "Ouvrir le menu d'aide 🔍")    
-          .addField("──────────", "Ouvrir le menu Option ⚙️")  
+          .addField("──────────", "**Ouvrir son grimmoire** 📖")      
+          .addField("──────────", "**Ouvrir le menu d'aide** 🔍")    
+          .addField("──────────", "**Ouvrir le menu Option** ⚙️")  
           .setFooter("Naenelis Bot")
           message.channel.send(menuembed)      
             .then(msg => msg.react('📖'))
             .then(mReaction => mReaction.message.react('🔍'))
             .then(mReaction => mReaction.message.react('⚙️'))
             .then(mReaction => {
+
+              const collector = mReaction.message
+                .createReactionCollector(reactionFilter, {
+                  time: 15000
+      });
+
 
            })       
       }       
