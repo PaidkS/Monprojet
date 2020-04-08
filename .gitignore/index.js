@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 
 bot.login (process.env.TOKEN);
 bot.on("ready", () => {
-bot.user.setActivity('!aide', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
+bot.user.setActivity('!menu', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
   console.log("Bot [ON]")
   })
 bot.on('guildMemberAdd', member => {
@@ -115,6 +115,16 @@ bot.on("message", message => {
           .setColor("#dc143c")
           .setTimestamp()
           .setDescription("``` ``` \n **Tu dois écrire l'histoire de ton personnage, 8 lignes minimum sur pc et 10 lignes sur téléphone.** \n  ``` ```")         
+          .setFooter("Naenelis Bot");
+          return message.channel.send(ficheembed);      
+                    
+      }
+      if (message.content.startsWith === "!calîn"){
+        var ficheembed = new Discord.RichEmbed()
+          .setAuthor("Calîn !!!!", bot.user.displayAvatarURL)       
+          .setColor("#dc143c")
+          .setTimestamp()
+          .setImage('https://cdn.discordapp.com/attachments/696352364499566642/697413068950339624/giphy_2.gif')         
           .setFooter("Naenelis Bot");
           return message.channel.send(ficheembed);      
                     
