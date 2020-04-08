@@ -137,6 +137,9 @@ bot.on("message", message => {
           .setImage('https://cdn.discordapp.com/attachments/696352364499566642/697413068950339624/giphy_2.gif')         
           .setFooter("Naenelis Bot");
           return message.channel.send(hugeembed);
+
+      }
+        
       //!summon commandes
       
       if (message.content === "!summon monstre tier 1"){
