@@ -119,7 +119,7 @@ bot.on("message", message => {
           return message.channel.send(ficheembed);      
                     
       }
-      if (message.content.startsWith === "!calîn"){
+      if (message.content.includes ('!calîn')) {
         var hugembed = new Discord.RichEmbed()
           .setAuthor(message.author.displayAvatarURL, message.author.username + message.mentions.members)       
           .setColor("#dc143c")
@@ -129,7 +129,7 @@ bot.on("message", message => {
           return message.channel.send(hugembed);      
                     
       }
-      if (message.content.startsWith === "!calin"){
+      if (message.content.includes ('!calin')) {
         var hugeembed = new Discord.RichEmbed()
           .setAuthor(message.author.displayAvatarURL, message.author.username + message.mentions.members)       
           .setColor("#dc143c")
