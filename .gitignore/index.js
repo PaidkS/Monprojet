@@ -121,7 +121,7 @@ bot.on("message", message => {
       }
       if (message.content.startsWith === "!calîn"){
         var hugembed = new Discord.RichEmbed()
-          .setAuthor("Calîn !!!!", bot.user.displayAvatarURL)       
+          .setAuthor(message.author.displayAvatarURL, message.author.username + message.mentions.members)       
           .setColor("#dc143c")
           .setTimestamp()
           .setImage('https://cdn.discordapp.com/attachments/696352364499566642/697413068950339624/giphy_2.gif')         
@@ -131,14 +131,12 @@ bot.on("message", message => {
       }
       if (message.content.startsWith === "!calin"){
         var hugeembed = new Discord.RichEmbed()
-          .setAuthor("Calîn !!!!", bot.user.displayAvatarURL)       
+          .setAuthor(message.author.displayAvatarURL, message.author.username + message.mentions.members)       
           .setColor("#dc143c")
           .setTimestamp()
           .setImage('https://cdn.discordapp.com/attachments/696352364499566642/697413068950339624/giphy_2.gif')         
           .setFooter("Naenelis Bot");
-          return message.channel.send(hugeembed);      
-                    
-      }
+          return message.channel.send(hugeembed);
       //!summon commandes
       
       if (message.content === "!summon monstre tier 1"){
