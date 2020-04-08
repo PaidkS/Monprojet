@@ -4,7 +4,7 @@ const bot = new Discord.Client();
 
 bot.login (process.env.TOKEN);
 bot.on("ready", () => {
-bot.user.setActivity('!menu', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
+bot.user.setActivity('!aide', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
   console.log("Bot [ON]")
   })
 bot.on('guildMemberAdd', member => {
@@ -43,17 +43,11 @@ bot.on("message", message => {
     if (message.content === "!aide"){
         var helpembed = new Discord.RichEmbed()
           .setAuthor("Naenelis", bot.user.displayAvatarURL)
-          .setTitle("💬 Les commandes du bots : 💬")
           .setTimestamp()
           .setDescription("**Voici les commandes de base du bot :\nLe préfixe du bot est !**")
           .setColor("#dc143c")
-          .addField("Début","├ !contexte :")
-          .addField("**vous donne le contexte du rp**  ","├ !fiche :" )
-          .addField("**vous donne la template fiche rp** ","├ !serverinfo :")
-          .addField("**pour voir les infos du serveur** ", "├ !plainte :" )
-          .addField("**vous créez une plainte au staff** ", "├ !aide fiche :"  )
-          .addField("**t'aide à faire ta fiche rp** ","├ !map :"  )
-          .addField("**vous montre la map du rp** ", "└┉╴┐ 『                ۞۞۞۞۞                』 ┌╴┉┘" )
+          .addField("<:3263_Blank:697073139099893780>","Commandes :")
+          .addField("``aide fiche`` ``contexte`` ``fiche`` ``serverinfo`` ``map`` ``menu`` ``calîn`` ``bisous``","<:3263_Blank:697073139099893780>")     
           .setFooter("Naenelis Bot");
           message.author.send(helpembed);
       
