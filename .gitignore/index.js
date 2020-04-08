@@ -129,6 +129,16 @@ bot.on("message", message => {
           return message.channel.send(hugembed);      
                     
       }
+      if (message.content.startsWith === "!calin"){
+        var hugeembed = new Discord.RichEmbed()
+          .setAuthor("Calîn !!!!", bot.user.displayAvatarURL)       
+          .setColor("#dc143c")
+          .setTimestamp()
+          .setImage('https://cdn.discordapp.com/attachments/696352364499566642/697413068950339624/giphy_2.gif')         
+          .setFooter("Naenelis Bot");
+          return message.channel.send(hugeembed);      
+                    
+      }
       //!summon commandes
       
       if (message.content === "!summon monstre tier 1"){
