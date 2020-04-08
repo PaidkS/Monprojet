@@ -121,7 +121,7 @@ bot.on("message", message => {
       }
       if (message.content.includes ('!calîn')) {
         var hugembed = new Discord.RichEmbed()
-          .setAuthor(message.author.displayAvatarURL, message.author.username + message.mentions.members)       
+          .setAuthor(message.author.displayAvatarURL)       
           .setColor("#dc143c")
           .setTimestamp()
           .setImage('https://cdn.discordapp.com/attachments/696352364499566642/697413068950339624/giphy_2.gif')         
@@ -131,7 +131,7 @@ bot.on("message", message => {
       }
       if (message.content.includes ('!calin')) {
         var hugeembed = new Discord.RichEmbed()
-          .setAuthor(message.author.displayAvatarURL, message.author.username + message.mentions.members)       
+          .setAuthor(message.author.displayAvatarURL)       
           .setColor("#dc143c")
           .setTimestamp()
           .setImage('https://cdn.discordapp.com/attachments/696352364499566642/697413068950339624/giphy_2.gif')         
