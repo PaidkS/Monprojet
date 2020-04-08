@@ -120,13 +120,13 @@ bot.on("message", message => {
                     
       }
       if (message.content.startsWith === "!calîn"){
-        var ficheembed = new Discord.RichEmbed()
+        var hugembed = new Discord.RichEmbed()
           .setAuthor("Calîn !!!!", bot.user.displayAvatarURL)       
           .setColor("#dc143c")
           .setTimestamp()
           .setImage('https://cdn.discordapp.com/attachments/696352364499566642/697413068950339624/giphy_2.gif')         
           .setFooter("Naenelis Bot");
-          return message.channel.send(ficheembed);      
+          return message.channel.send(hugembed);      
                     
       }
       //!summon commandes
