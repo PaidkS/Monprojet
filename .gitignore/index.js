@@ -1,7 +1,8 @@
 const Discord = require("discord.js");
 const bot = new Discord.Client();
+const fs = require("fs");
 
-
+let xp = require("./xp.json");
 bot.login (process.env.TOKEN);
 bot.on("ready", () => {
 bot.user.setActivity('!menu', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
@@ -186,6 +187,33 @@ bot.on("message", message => {
           return message.channel.send(tierssssembed);      
                     
       }
+      let xpAdd = Math.floor(Math.random() * 7) + 8;
+      console.log(xpAdd);
+    
+      if(!xp[message.author.id]){
+        xp[message.author.id] = {
+          xp: 0,
+          level: 1
+        };
+      }
+    
+    
+      let curxp = xp[message.author.id].xp;
+      let curlvl = xp[message.author.id].level;
+      let nxtLvl = xp[message.author.id].level * 300;
+      xp[message.author.id].xp =  curxp + xpAdd;
+      if(nxtLvl <= xp[message.author.id].xp){
+        xp[message.author.id].level = curlvl + 1;
+        let lvlup = new Discord.RichEmbed()
+        .setTitle("Level Up!")
+        .setColor(purple)
+        .addField("New Level", curlvl + 1);
+    
+        message.channel.send(lvlup).then(msg => {msg.delete(5000)});
+      }
+      fs.writeFile("./xp.json", JSON.stringify(xp), (err) => {
+        if(err) console.log(err)
+      });      
       if (message.content === "!menu"){
         var menuembed = new Discord.RichEmbed()
           .setAuthor(message.author.username, message.author.displayAvatarURL)       
