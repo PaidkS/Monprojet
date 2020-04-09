@@ -217,7 +217,28 @@ bot.on("message", message => {
           console.log(err)
           message.reply("MSKN")
         }
-      });      
+      }); 
+      if (message.content === "!rank") {
+        if(!xp[message.author.id]){
+          xp[message.author.id] = {
+            xp: 0,
+            level: 1
+         };
+       }
+         let curxp = xp[message.author.id].xp;
+         let curlvl = xp[message.author.id].level;
+         let nxtLvlXp = curlvl * 300;
+         let difference = nxtLvlXp - curxp;
+       
+         let lvlEmbed = new Discord.RichEmbed()
+         .setAuthor(message.author.username)
+         .setColor("#dc143c")
+         .addField("Level", curlvl, true)
+         .addField("XP", curxp, true)
+         .setFooter(`${difference} XP til level up`, message.author.displayAvatarURL);
+       
+         message.channel.send(lvlEmbed).then(msg => {msg.delete(5000)});       
+      }
       if (message.content === "!menu"){
         var menuembed = new Discord.RichEmbed()
           .setAuthor(message.author.username, message.author.displayAvatarURL)       
