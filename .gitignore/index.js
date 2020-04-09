@@ -131,6 +131,16 @@ bot.on("message", message => {
           return message.channel.send(hugembed);      
                     
       }
+      if (message.content.includes ('!kiss')) {
+        var kissembed = new Discord.RichEmbed()
+          .setAuthor("Bisou !!!!!", message.author.displayAvatarURL)       
+          .setColor("#dc143c")
+          .setTimestamp()
+          .setImage('https://cdn.discordapp.com/attachments/492009468767502346/697880045028376626/giphys.gif')         
+          .setFooter("Naenelis Bot");
+          return message.channel.send(kissembed);      
+                    
+      }
       if (message.content.includes ('!calin')) {
         var hugeembed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.displayAvatarURL)       
