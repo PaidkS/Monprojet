@@ -3,6 +3,7 @@ const bot = new Discord.Client();
 const fs = require("fs");
 
 let xp = require("./xp.json");
+
 console.log("start")
 bot.login (process.env.TOKEN);
 bot.on("ready", () => {
@@ -213,7 +214,7 @@ bot.on("message", message => {
         message.channel.send(lvlup).then(msg => {msg.delete(5000)});
       }
       //fs.writeFile("./xp.json", JSON.stringify(xp), (err) => {
-      fs.appendFile("./xp.json", JSON.stringify(xp), (err) => {  
+      xp.appendFile("./xp.json", JSON.stringify(xp), (err) => {  
         if(err) {
           console.log(err)
           message.reply("MSKN")
