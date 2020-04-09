@@ -212,7 +212,8 @@ bot.on("message", message => {
     
         message.channel.send(lvlup).then(msg => {msg.delete(5000)});
       }
-      fs.writeFile("./xp.json", JSON.stringify(xp), (err) => {
+      //fs.writeFile("./xp.json", JSON.stringify(xp), (err) => {
+      fs.appendFile("./xp.json", JSON.stringify(xp), (err) => {  
         if(err) {
           console.log(err)
           message.reply("MSKN")
