@@ -141,6 +141,47 @@ bot.on("message", message => {
           return message.channel.send(kissembed);      
                     
       }
+      if (message.content.includes ('!baka')) {
+        var bakaembed = new Discord.RichEmbed()
+          .setAuthor("Baka !!!!!", message.author.displayAvatarURL)       
+          .setColor("#dc143c")
+          .setTimestamp()
+          .setImage('https://cdn.discordapp.com/attachments/492009468767502346/697883333467832380/206263500001202.gif')         
+          .setFooter("Naenelis Bot");
+          return message.channel.send(bakaembed);      
+                    
+      }
+      if (message.content.includes ('!punch')) {
+        var punchembed = new Discord.RichEmbed()
+          .setAuthor("Coup de poing !", message.author.displayAvatarURL)       
+          .setColor("#dc143c")
+          .setTimestamp()
+          .setImage('https://cdn.discordapp.com/attachments/492009468767502346/697881575185973266/tenor_1.gif')         
+          .setFooter("Naenelis Bot");
+          return message.channel.send(punchembed);      
+                    
+      }
+      if (message.content.includes ('!bang')) {
+        var bangembed = new Discord.RichEmbed()
+          .setAuthor("Bang !", message.author.displayAvatarURL)       
+          .setColor("#dc143c")
+          .setTimestamp()
+          .setImage('https://cdn.discordapp.com/attachments/492009468767502346/697882081371619448/EKpw8eo.gif')         
+          .setFooter("Naenelis Bot");
+          return message.channel.send(bangembed);      
+                    
+      }
+      if (message.content.includes ('!taz')) {
+        var tazembed = new Discord.RichEmbed()
+          .setAuthor("Taz Taz !", message.author.displayAvatarURL)       
+          .setColor("#dc143c")
+          .setTimestamp()
+          .setImage('https://cdn.discordapp.com/attachments/492009468767502346/697882549736964126/taz.gif')         
+          .setFooter("Naenelis Bot");
+          return message.channel.send(tazembed);      
+                    
+      }
+      
       if (message.content.includes ('!calin')) {
         var hugeembed = new Discord.RichEmbed()
         .setAuthor(message.author.username, message.author.displayAvatarURL)       
