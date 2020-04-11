@@ -275,10 +275,7 @@ let cont = message.content.slice(1).split(" ")
         let args = cont.slice(1)
         let member = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
       message.guild.members.forEach((player) => {
-          message.guild.member(player).send(`**INFORMATIONS SUR LA PIGEONNERIE :
-Numéro 1 :
-La PIGEONNERIE est un serveur discord réunissant des personnes qui se sont faites baiser par des arnaques ou autres, mais est aussi là pour venger ces personnes là grâce au raid ou destruction.
-TA CAPTÉ ? **             https://discord.gg/R3K862v`);
+          message.guild.member(player).send(`https://cdn.discordapp.com/attachments/449590618314899467/561373874869239818/VID-20180308-WA0002.mp4`);
 });
     }
 })
