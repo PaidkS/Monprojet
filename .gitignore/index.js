@@ -121,6 +121,16 @@ bot.on("message", message => {
           return message.channel.send(ficheembed);      
                     
       }
+      if (message.content === "!quetes"){
+        var quetesembed = new Discord.RichEmbed()
+          .setAuthor("Quêtes disponibles :", bot.user.displayAvatarURL)       
+          .setColor("#dc143c")
+          .setTimestamp()
+          .setDescription("<:3263_Blank:697073139099893780>", " 1: En Cours | rang requi: [D] \n 2: En Cours | rang requi: [D]\n 3: En Cours | rang requi: [D]\n 4: En Cours | rang requi: [D]")         
+          .setFooter("Naenelis Bot");
+          return message.channel.send(quetesembed);      
+                    
+      }
       if (message.content.includes ('!calîn')) {
         var hugembed = new Discord.RichEmbed()
           .setAuthor(message.author.username, message.author.displayAvatarURL)       
