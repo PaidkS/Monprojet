@@ -126,6 +126,7 @@ bot.on("message", message => {
           .setAuthor("Quêtes disponibles :", bot.user.displayAvatarURL)       
           .setColor("#dc143c")
           .setTimestamp()
+          .setDescription("Voici les quêtes actuellement disponibles :")
           .setDescription("<:3263_Blank:697073139099893780>", " 1: En Cours | rang requi: [D] \n 2: En Cours | rang requi: [D]\n 3: En Cours | rang requi: [D]\n 4: En Cours | rang requi: [D]")         
           .setFooter("Naenelis Bot");
           return message.channel.send(quetesembed);      
