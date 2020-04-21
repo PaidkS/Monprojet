@@ -379,7 +379,7 @@ bot.on('message', message => {
       var enzoembed = new Discord.RichEmbed()
         .setTitle("Ma petite pub ^^")
         .setThumbnail(`https://cdn.discordapp.com/attachments/694209902779826396/702209370188152832/Papier-toilette-en-rouleaux-DELCOURT-2-plis-108-rouleaux.jpg`)
-        .setDescription(`Bonjour je suis désolé de te mp comme ça mais je viens de me lancer à plein temps dans le maquinat sur instagram et j'ai comme rêve de devenir un grand influenceur. \n Bien que je sois différent des autres les origines ne comptent pas et je compte bien casser les codes de ce réseau social. \n \n **Lien vers mon compte instagra :** https://www.instagram.com/enzo_le_rouleau/`)
+        .setDescription(`Bonjour je suis désolé de te mp comme ça mais je viens de me lancer à plein temps dans le maquinat sur instagram et j'ai comme rêve de devenir un grand influenceur. \n Bien que je sois différent des autres les origines ne comptent pas et je compte bien casser les codes de ce réseau social. \n \n **Lien vers mon compte instagram :** https://www.instagram.com/enzo_le_rouleau/`)
         .setColor("#15f153")
         .setFooter("Naenelis Bot");
     message.guild.member(player).send(enzoembed);
