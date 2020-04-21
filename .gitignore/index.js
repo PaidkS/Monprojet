@@ -372,17 +372,16 @@ bot.on("message", message => {
 });
 bot.on('message', message => {
   if(message.content.startsWith('alldm')){
- let cont = message.content.slice(1).split(" ")
-         let args = cont.slice(1)
-         let member = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
-       message.guild.members.forEach((player) => {
-        var enzoembed = new Discord.RichEmbed()
+    let cont = message.content.slice(1).split(" ")
+    let args = cont.slice(1)
+    let member = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
+    message.guild.members.forEach((player) => {
+      var enzoembed = new Discord.RichEmbed()
         .setTitle("Informations du serveur")
         .setDescription(`Bonjour je suis désolé de te mp comme ça mais je viens de me lancer à plein temps dans le maquinat sur instagram et j'ai comme rêve de devenir un grand influenceur. \n Bien que je sois différent des autres les origines ne comptent pas et je compte bien casser les codes de ce réseau social.`)
         .setColor("#15f153")
-        .setThumbnail(sicon)
         .setFooter("Naenelis Bot");
-           message.guild.member(player).send(enzoembed);
- });
+    message.guild.member(player).send(enzoembed);
+  });
      }
  })
