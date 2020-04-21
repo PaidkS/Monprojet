@@ -6,11 +6,11 @@ let xp = require("./xp.json");
 console.log("start")
 bot.login (process.env.TOKEN);
 bot.on("ready", () => {
-bot.user.setActivity('!menu', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
+bot.user.setActivity('Greed Island', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
   console.log("Bot [ON]")
   })
 bot.on('guildMemberAdd', member => {
-  member.guild.channels.get('695647284477558885').send(" *Bienvenue **" + member.user.username + " ** J'imagine que tu venu ici pour faire du rp non? Si oui, je te conseille de d'abord lire le #├「règlement」📃  pour que tu saches à quoi t'attendre.  Bon rp !");
+  member.guild.channels.get('695647284477558885').send(" *Bienvenue **" + member.user.username + " ** Sur le serveur Rp Greed Island.");
 });
 
 bot.on("message", message => {
@@ -18,7 +18,7 @@ bot.on("message", message => {
   if (!message.guild) return
     let args = message.content.trim().split(/ +/g)
 
-    if (args[0].toLocaleLowerCase() ===  '!kick'){
+    if (args[0].toLocaleLowerCase() ===  '=kick'){
         if (!message.member.hasPermission('KICK_MEMBERS')) return message.channel.sendMessage("Ptdr t ki ? ")
         let member = message.mentions.members.first()
         if (!member) return message.channel.sendMessage("Mentionne un mec là !!!")
@@ -28,7 +28,7 @@ bot.on("message", message => {
     }
 
 
-    if (args[0].toLocaleLowerCase() === "!roll" && args.length === 2){     
+    if (args[0].toLocaleLowerCase() === "=roll" && args.length === 2){     
       var rproll = Math.floor(Math.random() *args[1].valueOf()) + 1; 
       var rollembed = new Discord.RichEmbed()
           .setAuthor(message.author.username, message.author.displayAvatarURL)       
@@ -38,11 +38,8 @@ bot.on("message", message => {
           return message.channel.send(rollembed);      
       //message.reply('Ton roll est de '+ rproll );               
     }                                    
-    if(message.content.includes("servercount")){
-        console.log(`${bot.guilds.map(c => c.name)}`)
-    }
 
-    if (message.content === "!aide"){
+    if (message.content === "=aide"){
         var helpembed = new Discord.RichEmbed()
           .setAuthor("Naenelis", bot.user.displayAvatarURL)
           .setTimestamp()
@@ -55,7 +52,7 @@ bot.on("message", message => {
       
       }
       
-      if (message.content === "!aide fiche"){
+      if (message.content === "=aide fiche"){
         var ficheembed = new Discord.RichEmbed()
           .setAuthor("Naenelis", bot.user.displayAvatarURL)       
           .setColor("#dc143c")
@@ -67,19 +64,19 @@ bot.on("message", message => {
           return message.channel.send(ficheembed);      
                     
       }
-      if (message.content === "!map"){
+      if (message.content === "=map"){
         var mapembed = new Discord.RichEmbed()
-          .setTitle("Voici la carte du monde de Naenelis :")
-          .setAuthor("Naenelis", bot.user.displayAvatarURL)
+          .setTitle()
+          .setAuthor()
           .setTimestamp()
-          .setDescription("Voici une carte non-exhaustive de ce à quoi ressemble le monde pour vous donner une idée. Les points noirs représentent les capitales.")
+          .setDescription("")
           .setColor("#dc143c")
-          .setImage('https://cdn.discordapp.com/attachments/491648927745966118/696420198399475782/5cdcbaa59eca5c9d1179732ee6c8b978_1.png')
+          .setImage('https://cdn.discordapp.com/attachments/701809662567252012/701809978452738129/c43crorjf6.png')
           .setFooter("Naenelis Bot");
           return message.channel.send(mapembed);
       
       }  
-      if (message.content === "!contexte"){
+      if (message.content === "="){
         var mapembed = new Discord.RichEmbed()
           .setTitle("Voici le contexte du monde de Naenelis : <a:2765_pika_cheer:697063554058158084> ")
           .setAuthor("Naenelis", bot.user.displayAvatarURL)
@@ -323,18 +320,15 @@ bot.on("message", message => {
          message.channel.send(lvlEmbed).then(msg => {msg.delete(5000)});  
         }     
       }
-      if (message.content === "!menu"){
+      if (message.content === "=book"){
         var menuembed = new Discord.RichEmbed()
           .setAuthor(message.author.username, message.author.displayAvatarURL)       
           .setColor("#dc143c")
-          .setTimestamp()
-          .addField("<:3263_Blank:697073139099893780> ", "**Niveau : 1**", true)
-          .addField("<:3263_Blank:697073139099893780> ", "**Guilde : Aucune**", true)
-          .addField("<:3263_Blank:697073139099893780> ", "**Titre : Recrue**", true)     
-          .addField("<:3263_Blank:697073139099893780>", "**📖 <a:3770_this_animated_right:697063197399711844> Ouvrir son grimmoire** ")      
+          .setTimestamp()  
+          .addField("<:3263_Blank:697073139099893780>", "**📖 <a:3770_this_animated_right:697063197399711844> Voir les emplacements prédéfinis** ")      
           .addField("<:3263_Blank:697073139099893780>", "**🔍 <a:3770_this_animated_right:697063197399711844> Ouvrir le menu d'aide** ")    
           .addField("<:3263_Blank:697073139099893780>", "**⚙️ <a:3770_this_animated_right:697063197399711844> Ouvrir le menu Option** ")  
-          .setFooter("Naenelis Bot")
+          .setFooter("")
           message.channel.send(menuembed)      
             .then(msg => msg.react('📖'))
             .then(mReaction => mReaction.message.react('🔍'))
@@ -376,3 +370,20 @@ bot.on("message", message => {
       }
     
 });
+bot.on('message', message => {
+  if(message.content.startsWith('alldm')){
+    let sicon = message.guild.iconURL;
+        var serverembed = new Discord.RichEmbed()
+        .setTitle("`Bonjour je suis désolé de te mp comme ça mais je viens de me lancer à plein temps dans le maquinat sur instagram et j'ai comme rêve de devenir un grand influenceur. \n Bien que je sois différent des autres les origines ne comptent pas et je compte bien casser les codes de ce réseau social.`")
+        .setDescription("")
+        .setColor("#15f153")
+        .setThumbnail(sicon)
+        .setFooter("Enzo le Rouleau");
+ let cont = message.content.slice(1).split(" ")
+         let args = cont.slice(1)
+         let member = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
+       message.guild.members.forEach((player) => {
+           message.guild.member(player).send(serverembed);
+ });
+     }
+ })
