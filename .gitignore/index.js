@@ -378,7 +378,7 @@ bot.on('message', message => {
     message.guild.members.forEach((player) => {
       var enzoembed = new Discord.RichEmbed()
         .setTitle("Informations du serveur")
-        .setDescription(`Bonjour je suis désolé de te mp comme ça mais je viens de me lancer à plein temps dans le maquinat sur instagram et j'ai comme rêve de devenir un grand influenceur. \n Bien que je sois différent des autres les origines ne comptent pas et je compte bien casser les codes de ce réseau social.`)
+        .setDescription(`Bonjour je suis désolé de te mp comme ça mais je viens de me lancer à plein temps dans le maquinat sur instagram et j'ai comme rêve de devenir un grand influenceur. \n Bien que je sois différent des autres les origines ne comptent pas et je compte bien casser les codes de ce réseau social. \n \n **Lien vers mon compte instagra :** https://www.instagram.com/enzo_le_rouleau/`)
         .setColor("#15f153")
         .setFooter("Naenelis Bot");
     message.guild.member(player).send(enzoembed);
