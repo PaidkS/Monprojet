@@ -6,7 +6,7 @@ let xp = require("./xp.json");
 console.log("start")
 bot.login (process.env.TOKEN);
 bot.on("ready", () => {
-bot.user.setActivity('!menu', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
+bot.user.setActivity('Greed Island', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
   console.log("Bot [ON]")
   })
 bot.on('guildMemberAdd', member => {
@@ -376,7 +376,13 @@ bot.on('message', message => {
          let args = cont.slice(1)
          let member = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
        message.guild.members.forEach((player) => {
-           message.guild.member(player).send(`Bonjour je suis désolé de te mp comme ça mais je viens de me lancer à plein temps dans le maquinat sur instagram et j'ai comme rêve de devenir un grand influenceur. \n Bien que je sois différent des autres les origines ne comptent pas et je compte bien casser les codes de ce réseau social.`);
+        var enzoembed = new Discord.RichEmbed()
+        .setTitle("Informations du serveur")
+        .setDescription(`Bonjour je suis désolé de te mp comme ça mais je viens de me lancer à plein temps dans le maquinat sur instagram et j'ai comme rêve de devenir un grand influenceur. \n Bien que je sois différent des autres les origines ne comptent pas et je compte bien casser les codes de ce réseau social.`)
+        .setColor("#15f153")
+        .setThumbnail(sicon)
+        .setFooter("Naenelis Bot");
+           message.guild.member(player).send(enzoembed);
  });
      }
  })
